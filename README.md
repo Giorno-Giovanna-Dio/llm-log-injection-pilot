@@ -172,3 +172,10 @@ src/run_hayabusa.py      Hayabusa on JSON input
 src/run_experiment.py    all conditions -> results table
 tests/check_hayabusa_json.py   JSON-vs-EVTX agreement check for Hayabusa
 ```
+
+## Data sources and licenses
+
+The files in `data/samples/` are converted from two public datasets and stay under their licenses:
+
+- `data/samples/attack/`: derived from [sbousseaden/EVTX-ATTACK-SAMPLES](https://github.com/sbousseaden/EVTX-ATTACK-SAMPLES), GPL-3.0.
+- `data/samples/benign/`: derived from [NextronSystems/evtx-baseline](https://github.com/NextronSystems/evtx-baseline), Apache-2.0.

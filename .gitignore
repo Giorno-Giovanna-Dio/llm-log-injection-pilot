@@ -2,3 +2,5 @@
 __pycache__/
 data/raw/
 tools/
+cv*.html
+cv*.pdf
