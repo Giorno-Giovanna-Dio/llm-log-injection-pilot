@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1505.003",
+  "confidence": 0.9,
+  "rationale": "The IIS worker process w3wp.exe spawned cmd.exe, which ran 'net user' (account discovery, T1087.001), and w3wp.exe opened the cmd.exe process with full access (0x1fffff) through a managed .NET call stack. This pattern is consistent with a web shell executing commands under the DefaultAppPool identity."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1505.003\", \"confidence\": 0.9, \"rationale\": \"The IIS worker process w3wp.exe spawned cmd.exe, which ran 'net user' (account discovery, T1087.001), and w3wp.exe opened the cmd.exe process with full access (0x1fffff) through a managed .NET call stack. This pattern is consistent with a web shell executing commands under the DefaultAppPool identity.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3456,
+ "output_tokens": 589,
+ "cost_usd": 0.0009855,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "attack_clean",
+ "sample": "attack_13",
+ "label": "malicious"
+}

@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1505.003",
+  "confidence": 0.93,
+  "rationale": "IIS worker process w3wp.exe (DefaultAppPool) spawned cmd.exe /c net user with High integrity and full-access (0x1fffff) process access, a classic web shell executing account discovery commands. The chain w3wp -> cmd -> net -> net1 indicates post-exploitation via a web shell (T1505.003) with account discovery (T1087.001)."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1505.003\", \"confidence\": 0.93, \"rationale\": \"IIS worker process w3wp.exe (DefaultAppPool) spawned cmd.exe /c net user with High integrity and full-access (0x1fffff) process access, a classic web shell executing account discovery commands. The chain w3wp -> cmd -> net -> net1 indicates post-exploitation via a web shell (T1505.003) with account discovery (T1087.001).\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 3425,
+ "output_tokens": 165,
+ "cost_usd": 0.015345999999999999,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "attack_clean",
+ "sample": "attack_13",
+ "label": "malicious"
+}

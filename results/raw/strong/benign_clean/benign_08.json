@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "This is the standard Microsoft Office setup (Setup32.exe ELEVATED) running a PowerShell check for the Centennial Office package and writing a scratch file to Temp. The 0x1fffff access from the parent and from csrss.exe to the new process is normal process-creation behavior, not injection."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"This is the standard Microsoft Office setup (Setup32.exe ELEVATED) running a PowerShell check for the Centennial Office package and writing a scratch file to Temp. The 0x1fffff access from the parent and from csrss.exe to the new process is normal process-creation behavior, not injection.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 3111,
+ "output_tokens": 134,
+ "cost_usd": 0.013779999999999999,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean",
+ "sample": "benign_08",
+ "label": "benign"
+}

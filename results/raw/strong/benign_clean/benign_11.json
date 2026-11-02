@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.95,
+  "rationale": "This is routine Office Click-to-Run behavior. The signed OfficeClickToRun.exe service launches Integrator.exe from its standard path, writes its own virtualized ClickToRun registry keys, and holds a full-access handle on the child process it spawned. All of it runs as SYSTEM with a call trace entirely within the OfficeClickToRun.exe image and system DLLs, so there are no signs of injection or abuse."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.95, \"rationale\": \"This is routine Office Click-to-Run behavior. The signed OfficeClickToRun.exe service launches Integrator.exe from its standard path, writes its own virtualized ClickToRun registry keys, and holds a full-access handle on the child process it spawned. All of it runs as SYSTEM with a call trace entirely within the OfficeClickToRun.exe image and system DLLs, so there are no signs of injection or abuse.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 2906,
+ "output_tokens": 176,
+ "cost_usd": 0.01338,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean",
+ "sample": "benign_11",
+ "label": "benign"
+}

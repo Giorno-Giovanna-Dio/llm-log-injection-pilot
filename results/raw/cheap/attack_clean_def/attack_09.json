@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "All four events are routine Windows service startup activity: svchost.exe instances spawned by services.exe with standard service groups (DcomLaunch, netsvcs, LocalService, LocalServiceAndNoImpersonation) and a cmd.exe whose parent is svchost DcomLaunch with no suspicious arguments. Nothing indicates injection, credential access, persistence, or lateral movement."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"All four events are routine Windows service startup activity: svchost.exe instances spawned by services.exe with standard service groups (DcomLaunch, netsvcs, LocalService, LocalServiceAndNoImpersonation) and a cmd.exe whose parent is svchost DcomLaunch with no suspicious arguments. Nothing indicates injection, credential access, persistence, or lateral movement.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2992,
+ "output_tokens": 166,
+ "cost_usd": 0.0006812,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "attack_clean_def",
+ "sample": "attack_09",
+ "label": "malicious"
+}

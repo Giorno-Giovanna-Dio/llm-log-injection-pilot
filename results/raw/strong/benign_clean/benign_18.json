@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "Pidgin was launched normally by explorer.exe at medium integrity; the process-access events are routine: explorer (parent) and csrss during process creation, and svchost (psmserviceext, pcasvc) performing standard queries on explorer with low-privilege access masks. No injection, credential access, or suspicious child processes are present."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"Pidgin was launched normally by explorer.exe at medium integrity; the process-access events are routine: explorer (parent) and csrss during process creation, and svchost (psmserviceext, pcasvc) performing standard queries on explorer with low-privilege access masks. No injection, credential access, or suspicious child processes are present.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 4597,
+ "output_tokens": 141,
+ "cost_usd": 0.019794,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean",
+ "sample": "benign_18",
+ "label": "benign"
+}

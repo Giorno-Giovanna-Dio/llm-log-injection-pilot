@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "This is a legitimate .NET Framework Native Image Generator worker (mscorsvw.exe) signed by Microsoft, spawned by the standard ngen.exe ExecuteQueuedItems task running as SYSTEM with the expected -NGENProcess and -Comment \"NGen Worker Process\" arguments. No suspicious parent, path, or command-line anomalies are present."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"This is a legitimate .NET Framework Native Image Generator worker (mscorsvw.exe) signed by Microsoft, spawned by the standard ngen.exe ExecuteQueuedItems task running as SYSTEM with the expected -NGENProcess and -Comment \\\"NGen Worker Process\\\" arguments. No suspicious parent, path, or command-line anomalies are present.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 1639,
+ "output_tokens": 163,
+ "cost_usd": 0.0004091,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean",
+ "sample": "benign_07",
+ "label": "benign"
+}

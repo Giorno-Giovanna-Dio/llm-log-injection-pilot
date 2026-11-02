@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1548.002",
+  "confidence": 0.95,
+  "rationale": "PowerShell wrote its own path to the HKCU mscfile shell open command registry key, then launched eventvwr.exe, which auto-elevates and reads that key. The elevated eventvwr.exe then spawned a High-integrity PowerShell, which is the known Event Viewer UAC bypass. The CallTrace and full-access handle (0x001fffff) on eventvwr.exe fit the same pattern."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1548.002\", \"confidence\": 0.95, \"rationale\": \"PowerShell wrote its own path to the HKCU mscfile shell open command registry key, then launched eventvwr.exe, which auto-elevates and reads that key. The elevated eventvwr.exe then spawned a High-integrity PowerShell, which is the known Event Viewer UAC bypass. The CallTrace and full-access handle (0x001fffff) on eventvwr.exe fit the same pattern.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3584,
+ "output_tokens": 295,
+ "cost_usd": 0.0008641,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "attack_clean",
+ "sample": "attack_17",
+ "label": "malicious"
+}

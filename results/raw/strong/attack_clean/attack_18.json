@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1053.005",
+  "confidence": 0.96,
+  "rationale": "WinPwnage (UAC bypass/elevation tool, method 4) creates a scheduled task from a temp XML file, runs it, and deletes it. This yields a SYSTEM cmd.exe spawned by taskeng.exe, a privilege escalation via scheduled task."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1053.005\", \"confidence\": 0.96, \"rationale\": \"WinPwnage (UAC bypass/elevation tool, method 4) creates a scheduled task from a temp XML file, runs it, and deletes it. This yields a SYSTEM cmd.exe spawned by taskeng.exe, a privilege escalation via scheduled task.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 3341,
+ "output_tokens": 132,
+ "cost_usd": 0.01468,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "attack_clean",
+ "sample": "attack_18",
+ "label": "malicious"
+}

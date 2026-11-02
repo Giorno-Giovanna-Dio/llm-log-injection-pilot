@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "The parent is Microsoft Office's ClickToRun Integrator running as SYSTEM with signed Office install arguments, and it deletes its own Office scheduled task (OfficeBackgroundTaskHandlerLogon) during a normal install or repair flow. The process-access events are consistent with Office and csrss behavior, with no suspicious download, persistence, or credential access indicators."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"The parent is Microsoft Office's ClickToRun Integrator running as SYSTEM with signed Office install arguments, and it deletes its own Office scheduled task (OfficeBackgroundTaskHandlerLogon) during a normal install or repair flow. The process-access events are consistent with Office and csrss behavior, with no suspicious download, persistence, or credential access indicators.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3236,
+ "output_tokens": 289,
+ "cost_usd": 0.0007915,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean_def",
+ "sample": "benign_14",
+ "label": "benign"
+}

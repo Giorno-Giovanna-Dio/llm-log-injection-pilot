@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "The batch shows a standard COM Surrogate (dllhost.exe) launched by svchost -k DcomLaunch with a normal /Processid GUID, signed Microsoft DLL loads, and csrss/svchost handle opens that are typical of COM activation. The raw volume reads by System are unusual but common for indexing or AV, and nothing here indicates injection or credential access."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"The batch shows a standard COM Surrogate (dllhost.exe) launched by svchost -k DcomLaunch with a normal /Processid GUID, signed Microsoft DLL loads, and csrss/svchost handle opens that are typical of COM activation. The raw volume reads by System are unusual but common for indexing or AV, and nothing here indicates injection or credential access.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 6429,
+ "output_tokens": 373,
+ "cost_usd": 0.0014721,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean_def",
+ "sample": "benign_01",
+ "label": "benign"
+}

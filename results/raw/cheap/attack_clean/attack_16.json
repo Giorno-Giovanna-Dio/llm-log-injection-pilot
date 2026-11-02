@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1546.003",
+  "confidence": 0.95,
+  "rationale": "A Python script (WinPwnage) run from Downloads created a WMI CommandLineEventConsumer and filter binding that launched cmd.exe, which then ran as NT AUTHORITY\\SYSTEM under WmiPrvSE.exe, then deleted the subscription. Python also opened winlogon.exe and lsass.exe with 0x1410 access, consistent with privilege escalation through token access."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1546.003\", \"confidence\": 0.95, \"rationale\": \"A Python script (WinPwnage) run from Downloads created a WMI CommandLineEventConsumer and filter binding that launched cmd.exe, which then ran as NT AUTHORITY\\\\SYSTEM under WmiPrvSE.exe, then deleted the subscription. Python also opened winlogon.exe and lsass.exe with 0x1410 access, consistent with privilege escalation through token access.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 7794,
+ "output_tokens": 452,
+ "cost_usd": 0.0017846000000000001,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "attack_clean",
+ "sample": "attack_16",
+ "label": "malicious"
+}

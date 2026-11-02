@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.95,
+  "rationale": "A single Sysmon process-create event shows Google's signed crash handler (Google LLC, GoogleUpdate.exe original filename) launched by Google Update running as SYSTEM from the standard Program Files path, which is expected updater behavior. No suspicious parent, path, command-line, or follow-on activity is present."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.95, \"rationale\": \"A single Sysmon process-create event shows Google's signed crash handler (Google LLC, GoogleUpdate.exe original filename) launched by Google Update running as SYSTEM from the standard Program Files path, which is expected updater behavior. No suspicious parent, path, command-line, or follow-on activity is present.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 1532,
+ "output_tokens": 138,
+ "cost_usd": 0.0003752,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean",
+ "sample": "benign_03",
+ "label": "benign"
+}

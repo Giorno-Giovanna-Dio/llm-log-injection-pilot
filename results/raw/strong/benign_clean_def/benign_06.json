@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.85,
+  "rationale": "This is normal DCOM activation: svchost (DcomLaunch) spawns dllhost.exe with a /Processid COM surrogate GUID, and the svchost process access to the new child (0x1fffff) with an rpcss.dll call trace is expected behavior. There is no anomalous parent, path, or payload."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.85, \"rationale\": \"This is normal DCOM activation: svchost (DcomLaunch) spawns dllhost.exe with a /Processid COM surrogate GUID, and the svchost process access to the new child (0x1fffff) with an rpcss.dll call trace is expected behavior. There is no anomalous parent, path, or payload.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 2468,
+ "output_tokens": 138,
+ "cost_usd": 0.011248,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean_def",
+ "sample": "benign_06",
+ "label": "benign"
+}

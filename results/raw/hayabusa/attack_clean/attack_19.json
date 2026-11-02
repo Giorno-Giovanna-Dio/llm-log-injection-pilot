@@ -1,0 +1,358 @@
+{
+ "flagged": true,
+ "alerts": [
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Net Conn",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Terminated",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Terminated",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Terminated",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Terminated",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Terminated",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Terminated",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Terminated",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Terminated",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Terminated",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Terminated",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Terminated",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Terminated",
+   "level": "info"
+  },
+  {
+   "rule": "Signed Driver Loaded",
+   "level": "info"
+  },
+  {
+   "rule": "Signed Driver Loaded",
+   "level": "info"
+  },
+  {
+   "rule": "Signed Driver Loaded",
+   "level": "info"
+  },
+  {
+   "rule": "Signed Driver Loaded",
+   "level": "info"
+  },
+  {
+   "rule": "Signed Driver Loaded",
+   "level": "info"
+  },
+  {
+   "rule": "Signed Driver Loaded",
+   "level": "info"
+  },
+  {
+   "rule": "Driver Loaded (Unsigned)",
+   "level": "med"
+  },
+  {
+   "rule": "Driver Loaded (Unsigned)",
+   "level": "med"
+  },
+  {
+   "rule": "Driver Loaded (Unsigned)",
+   "level": "med"
+  },
+  {
+   "rule": "Driver Loaded (Unsigned)",
+   "level": "med"
+  },
+  {
+   "rule": "Driver Loaded (Unsigned)",
+   "level": "med"
+  },
+  {
+   "rule": "Driver Loaded (Unsigned)",
+   "level": "med"
+  },
+  {
+   "rule": "Outbound RDP Connections Over Non-Standard Tools",
+   "level": "high"
+  },
+  {
+   "rule": "Outbound RDP Connections Over Non-Standard Tools",
+   "level": "high"
+  },
+  {
+   "rule": "Suspicious Plink Port Forwarding",
+   "level": "high"
+  },
+  {
+   "rule": "Potential Remote Desktop Tunneling",
+   "level": "med"
+  },
+  {
+   "rule": "Tunneling Tool Execution",
+   "level": "med"
+  },
+  {
+   "rule": "Potential Executable Run Itself As Sacrificial Process",
+   "level": "low"
+  },
+  {
+   "rule": "Potential Executable Run Itself As Sacrificial Process",
+   "level": "low"
+  },
+  {
+   "rule": "Potential Executable Run Itself As Sacrificial Process",
+   "level": "low"
+  }
+ ],
+ "cost_usd": 0.0,
+ "system": "hayabusa",
+ "condition": "attack_clean",
+ "sample": "attack_19",
+ "label": "malicious"
+}

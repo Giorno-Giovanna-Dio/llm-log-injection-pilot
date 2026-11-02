@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "The batch shows the legitimate Microsoft Office ClickToRun service (signed Microsoft binary, running as SYSTEM from its standard install path) re-enabling its own scheduled task 'Office ClickToRun Service Monitor' and making routine registry writes for Excel.Sheet.12 handler registration. No suspicious parent-child chain, encoded commands, or unusual network or persistence behavior is present."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"The batch shows the legitimate Microsoft Office ClickToRun service (signed Microsoft binary, running as SYSTEM from its standard install path) re-enabling its own scheduled task 'Office ClickToRun Service Monitor' and making routine registry writes for Excel.Sheet.12 handler registration. No suspicious parent-child chain, encoded commands, or unusual network or persistence behavior is present.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 4034,
+ "output_tokens": 172,
+ "cost_usd": 0.0008926000000000001,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean_def",
+ "sample": "benign_10",
+ "label": "benign"
+}

@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.97,
+  "rationale": "This is the standard .NET NGen worker (mscorsvw.exe) launched by ngen.exe from the legitimate Framework64 directory as SYSTEM with the usual arguments and a matching OriginalFileName. It is routine .NET runtime optimization with no sign of masquerading or abuse."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.97, \"rationale\": \"This is the standard .NET NGen worker (mscorsvw.exe) launched by ngen.exe from the legitimate Framework64 directory as SYSTEM with the usual arguments and a matching OriginalFileName. It is routine .NET runtime optimization with no sign of masquerading or abuse.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 1618,
+ "output_tokens": 134,
+ "cost_usd": 0.007808000000000001,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean",
+ "sample": "benign_07",
+ "label": "benign"
+}

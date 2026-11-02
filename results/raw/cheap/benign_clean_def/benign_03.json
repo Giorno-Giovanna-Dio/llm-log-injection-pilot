@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.95,
+  "rationale": "GoogleCrashHandler.exe is a legitimate Google-signed binary running from the standard Google Update install path, spawned by the normal GoogleUpdate.exe /c parent with matching SYSTEM context and version directories. Nothing in the command lines or paths suggests masquerading, injection, or suspicious execution."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.95, \"rationale\": \"GoogleCrashHandler.exe is a legitimate Google-signed binary running from the standard Google Update install path, spawned by the normal GoogleUpdate.exe /c parent with matching SYSTEM context and version directories. Nothing in the command lines or paths suggests masquerading, injection, or suspicious execution.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 1674,
+ "output_tokens": 141,
+ "cost_usd": 0.00040510000000000003,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean_def",
+ "sample": "benign_03",
+ "label": "benign"
+}

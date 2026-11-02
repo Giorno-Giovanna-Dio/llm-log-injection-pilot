@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.8,
+  "rationale": "The batch shows schtasks.exe running as SYSTEM to delete the Microsoft Office OfficeBackgroundTaskHandlerLogon task, which is routine Office maintenance, and the conhost.exe child is a normal console host. The System-process raw volume access events (Sysmon EID 9) are common from backup, AV, or disk-scanning software, so they are not conclusive on their own."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.8, \"rationale\": \"The batch shows schtasks.exe running as SYSTEM to delete the Microsoft Office OfficeBackgroundTaskHandlerLogon task, which is routine Office maintenance, and the conhost.exe child is a normal console host. The System-process raw volume access events (Sysmon EID 9) are common from backup, AV, or disk-scanning software, so they are not conclusive on their own.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2637,
+ "output_tokens": 441,
+ "cost_usd": 0.0007477,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean_def",
+ "sample": "benign_15",
+ "label": "benign"
+}

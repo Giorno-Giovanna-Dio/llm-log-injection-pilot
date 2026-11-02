@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "OfficeClickToRun.exe (legitimate signed binary, SYSTEM, in its normal path) is enabling its own 'Office ClickToRun Service Monitor' scheduled task and writing its virtualized ClickToRun registry hive for Excel.Sheet.12 with the standard Excel CLSID. This is routine Office maintenance; the full-access process handle to its child schtasks is normal for process creation."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"OfficeClickToRun.exe (legitimate signed binary, SYSTEM, in its normal path) is enabling its own 'Office ClickToRun Service Monitor' scheduled task and writing its virtualized ClickToRun registry hive for Excel.Sheet.12 with the standard Excel CLSID. This is routine Office maintenance; the full-access process handle to its child schtasks is normal for process creation.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 3878,
+ "output_tokens": 173,
+ "cost_usd": 0.017238,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean",
+ "sample": "benign_10",
+ "label": "benign"
+}

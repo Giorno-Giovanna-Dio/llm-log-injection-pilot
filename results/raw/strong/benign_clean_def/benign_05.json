@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.95,
+  "rationale": "CompatTelRunner.exe launched by svchost.exe as SYSTEM with the standard aeinv.dll UpdateSoftwareInventoryW arguments is normal Windows compatibility telemetry. The Sysmon EventID 9 raw disk reads from the System process are routine volume access with no suspicious tooling."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.95, \"rationale\": \"CompatTelRunner.exe launched by svchost.exe as SYSTEM with the standard aeinv.dll UpdateSoftwareInventoryW arguments is normal Windows compatibility telemetry. The Sysmon EventID 9 raw disk reads from the System process are routine volume access with no suspicious tooling.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 2011,
+ "output_tokens": 143,
+ "cost_usd": 0.00947,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean_def",
+ "sample": "benign_05",
+ "label": "benign"
+}

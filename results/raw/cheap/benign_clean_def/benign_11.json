@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "The events show the signed Microsoft Office Click-to-Run service (OfficeClickToRun.exe, running as SYSTEM) launching its own Integrator.exe from the standard Office install path with expected arguments, plus a registry write and a process-access event between those two Microsoft binaries. This matches normal Office update and integration behavior with no sign of injection, unsigned binaries, or suspicious paths."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"The events show the signed Microsoft Office Click-to-Run service (OfficeClickToRun.exe, running as SYSTEM) launching its own Integrator.exe from the standard Office install path with expected arguments, plus a registry write and a process-access event between those two Microsoft binaries. This matches normal Office update and integration behavior with no sign of injection, unsigned binaries, or suspicious paths.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3063,
+ "output_tokens": 240,
+ "cost_usd": 0.0007324,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean_def",
+ "sample": "benign_11",
+ "label": "benign"
+}

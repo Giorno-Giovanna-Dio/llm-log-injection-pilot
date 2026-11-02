@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1218.010",
+  "confidence": 0.97,
+  "rationale": "A renamed regsvr32.exe (jabber.exe in C:\\ProgramData) was run with /u /s /i:http://pastebin.com/raw/... to load a remote scriptlet, a Squiblydoo-style AppLocker bypass. It then spawned cmd.exe, which indicates likely command execution after the payload ran."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1218.010\", \"confidence\": 0.97, \"rationale\": \"A renamed regsvr32.exe (jabber.exe in C:\\\\ProgramData) was run with /u /s /i:http://pastebin.com/raw/... to load a remote scriptlet, a Squiblydoo-style AppLocker bypass. It then spawned cmd.exe, which indicates likely command execution after the payload ran.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 1844,
+ "output_tokens": 151,
+ "cost_usd": 0.008882000000000001,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "attack_clean",
+ "sample": "attack_06",
+ "label": "malicious"
+}

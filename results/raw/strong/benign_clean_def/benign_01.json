@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "This is a normal COM Surrogate (dllhost.exe) launch by svchost DcomLaunch from System32, with only signed Microsoft DLLs loaded. The 0x1fffff process access from svchost and csrss is routine for process creation, and the volume-mount events are benign. There is no sign of injection, unsigned modules, or anomalous behavior."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"This is a normal COM Surrogate (dllhost.exe) launch by svchost DcomLaunch from System32, with only signed Microsoft DLLs loaded. The 0x1fffff process access from svchost and csrss is routine for process creation, and the volume-mount events are benign. There is no sign of injection, unsigned modules, or anomalous behavior.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 6412,
+ "output_tokens": 153,
+ "cost_usd": 0.027174,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean_def",
+ "sample": "benign_01",
+ "label": "benign"
+}

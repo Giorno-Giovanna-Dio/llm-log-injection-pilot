@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1564.001",
+  "confidence": 0.85,
+  "rationale": "An elevated Administrator cmd session ran `attrib +h nbtscan.exe` in C:\\ProgramData\\, hiding a NetBIOS network scanner, which is a reconnaissance tool and an unusual thing to conceal on a host. Hiding a likely offensive tool suggests an attacker staging it, though the single event alone does not confirm intent."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1564.001\", \"confidence\": 0.85, \"rationale\": \"An elevated Administrator cmd session ran `attrib +h nbtscan.exe` in C:\\\\ProgramData\\\\, hiding a NetBIOS network scanner, which is a reconnaissance tool and an unusual thing to conceal on a host. Hiding a likely offensive tool suggests an attacker staging it, though the single event alone does not confirm intent.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 1543,
+ "output_tokens": 288,
+ "cost_usd": 0.00045240000000000005,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "attack_clean_def",
+ "sample": "attack_03",
+ "label": "malicious"
+}

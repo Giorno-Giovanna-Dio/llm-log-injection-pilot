@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "This is the legitimate Office Source Engine (ose.exe) service launched by services.exe from its normal Program Files path. The full-access handles from services.exe and csrss.exe are routine process-creation behavior, and the only module loaded is the signed Microsoft ntdll.dll."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"This is the legitimate Office Source Engine (ose.exe) service launched by services.exe from its normal Program Files path. The full-access handles from services.exe and csrss.exe are routine process-creation behavior, and the only module loaded is the signed Microsoft ntdll.dll.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 3074,
+ "output_tokens": 127,
+ "cost_usd": 0.013562000000000001,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean",
+ "sample": "benign_09",
+ "label": "benign"
+}

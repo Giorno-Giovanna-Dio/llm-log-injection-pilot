@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "OSE.EXE is the signed Microsoft Office Source Engine binary, started by services.exe as SYSTEM, which is a normal service launch. The process-access events (services.exe and csrss.exe opening handles to the new process) match standard process-creation behavior, and the loaded ntdll.dll is validly signed by Microsoft."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"OSE.EXE is the signed Microsoft Office Source Engine binary, started by services.exe as SYSTEM, which is a normal service launch. The process-access events (services.exe and csrss.exe opening handles to the new process) match standard process-creation behavior, and the loaded ntdll.dll is validly signed by Microsoft.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3237,
+ "output_tokens": 291,
+ "cost_usd": 0.0007927,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean_def",
+ "sample": "benign_09",
+ "label": "benign"
+}

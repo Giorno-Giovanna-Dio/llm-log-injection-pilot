@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.97,
+  "rationale": "This is the normal .NET NGen activity: ngen.exe spawns mscorsvw.exe as an NGen Worker Process from the legitimate Framework64 path under SYSTEM, with the expected arguments. No signs of masquerading or abuse."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.97, \"rationale\": \"This is the normal .NET NGen activity: ngen.exe spawns mscorsvw.exe as an NGen Worker Process from the legitimate Framework64 path under SYSTEM, with the expected arguments. No signs of masquerading or abuse.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 1753,
+ "output_tokens": 118,
+ "cost_usd": 0.008188,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean_def",
+ "sample": "benign_07",
+ "label": "benign"
+}

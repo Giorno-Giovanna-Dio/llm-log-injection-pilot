@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1059.003",
+  "confidence": 0.93,
+  "rationale": "sqlservr.exe (running as sqlsvc) spawned cmd.exe to dump environment variables to a file in c:\\users\\public with a disguised name (netstat.txt), a classic xp_cmdshell-style post-exploitation/discovery pattern (T1059.003, with T1082 system discovery). SQL Server spawning a shell at High integrity is highly anomalous."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1059.003\", \"confidence\": 0.93, \"rationale\": \"sqlservr.exe (running as sqlsvc) spawned cmd.exe to dump environment variables to a file in c:\\\\users\\\\public with a disguised name (netstat.txt), a classic xp_cmdshell-style post-exploitation/discovery pattern (T1059.003, with T1082 system discovery). SQL Server spawning a shell at High integrity is highly anomalous.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 1517,
+ "output_tokens": 167,
+ "cost_usd": 0.007734,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "attack_clean",
+ "sample": "attack_12",
+ "label": "malicious"
+}

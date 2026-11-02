@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1059.003",
+  "confidence": 0.9,
+  "rationale": "sqlservr.exe spawned cmd.exe running 'set' with output redirected to a file in C:\\Users\\Public (named netstat.txt to mislead), which is consistent with xp_cmdshell abuse for host reconnaissance and output staging. A database service spawning a shell is highly anomalous."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1059.003\", \"confidence\": 0.9, \"rationale\": \"sqlservr.exe spawned cmd.exe running 'set' with output redirected to a file in C:\\\\Users\\\\Public (named netstat.txt to mislead), which is consistent with xp_cmdshell abuse for host reconnaissance and output staging. A database service spawning a shell is highly anomalous.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 1651,
+ "output_tokens": 141,
+ "cost_usd": 0.00801,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "attack_clean_def",
+ "sample": "attack_12",
+ "label": "malicious"
+}

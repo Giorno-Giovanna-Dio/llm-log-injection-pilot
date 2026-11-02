@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.85,
+  "rationale": "This is normal Edge child process startup: the parent msedge.exe and csrss.exe both get full access to a new GPU process, which is standard process creation behavior. The ntdll load is a signed Microsoft DLL, and the Sysmon EventID 9 raw disk reads come from the System process (PID 4). Nothing indicates injection, credential access, or other malicious activity."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.85, \"rationale\": \"This is normal Edge child process startup: the parent msedge.exe and csrss.exe both get full access to a new GPU process, which is standard process creation behavior. The ntdll load is a signed Microsoft DLL, and the Sysmon EventID 9 raw disk reads come from the System process (PID 4). Nothing indicates injection, credential access, or other malicious activity.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 3917,
+ "output_tokens": 157,
+ "cost_usd": 0.017234,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean",
+ "sample": "benign_17",
+ "label": "benign"
+}

@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1572",
+  "confidence": 0.95,
+  "rationale": "A user-writable plink.exe launched from cmd.exe on the Desktop opens an SSH session to 10.0.2.18 on port 80 with a remote port forward (-R) exposing the local RDP service (127.0.0.2:3389) on 127.0.0.3:4444, and it connects to that RDP service itself. This is a classic SSH-based tunnel that bypasses network controls and enables lateral RDP access."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1572\", \"confidence\": 0.95, \"rationale\": \"A user-writable plink.exe launched from cmd.exe on the Desktop opens an SSH session to 10.0.2.18 on port 80 with a remote port forward (-R) exposing the local RDP service (127.0.0.2:3389) on 127.0.0.3:4444, and it connects to that RDP service itself. This is a classic SSH-based tunnel that bypasses network controls and enables lateral RDP access.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 21460,
+ "output_tokens": 372,
+ "cost_usd": 0.0044778000000000005,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "attack_clean",
+ "sample": "attack_19",
+ "label": "malicious"
+}

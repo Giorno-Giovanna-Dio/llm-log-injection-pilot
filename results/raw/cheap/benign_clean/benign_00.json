@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "The batch is consistent with normal Windows Defender signature-update activity (MsMpEng launching MpCmdRun as SYSTEM, with csrss access to it), plus a routine Python installer process terminating from its temp extraction folder. The raw volume reads by the System process are unusual but have benign explanations such as backup or AV scanning, and nothing here shows injection, credential access, or persistence."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"The batch is consistent with normal Windows Defender signature-update activity (MsMpEng launching MpCmdRun as SYSTEM, with csrss access to it), plus a routine Python installer process terminating from its temp extraction folder. The raw volume reads by the System process are unusual but have benign explanations such as backup or AV scanning, and nothing here shows injection, credential access, or persistence.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2784,
+ "output_tokens": 332,
+ "cost_usd": 0.0007226000000000001,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean",
+ "sample": "benign_00",
+ "label": "benign"
+}

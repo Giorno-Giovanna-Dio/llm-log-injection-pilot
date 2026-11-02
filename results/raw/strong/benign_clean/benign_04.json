@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.93,
+  "rationale": "This is the normal scheduled MicrosoftEdgeUpdate.exe run (/ua /installsource scheduler) launched by svchost (Task Scheduler/netsvcs) as SYSTEM from its legitimate path. The 0x1fffff handle accesses from svchost and csrss.exe are routine process-creation handles, and the call traces show standard UBPM/EventAggregation and basesrv stacks."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.93, \"rationale\": \"This is the normal scheduled MicrosoftEdgeUpdate.exe run (/ua /installsource scheduler) launched by svchost (Task Scheduler/netsvcs) as SYSTEM from its legitimate path. The 0x1fffff handle accesses from svchost and csrss.exe are routine process-creation handles, and the call traces show standard UBPM/EventAggregation and basesrv stacks.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 2802,
+ "output_tokens": 173,
+ "cost_usd": 0.012934,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean",
+ "sample": "benign_04",
+ "label": "benign"
+}

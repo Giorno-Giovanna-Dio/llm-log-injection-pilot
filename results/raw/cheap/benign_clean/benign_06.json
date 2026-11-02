@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "This is normal COM surrogate activity: the DcomLaunch svchost (RPCSS) starts dllhost.exe with a /Processid GUID, and RPCSS then gets a handle to it, which is expected for COM activation. Nothing here shows injection, credential access, or other suspicious behavior."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"This is normal COM surrogate activity: the DcomLaunch svchost (RPCSS) starts dllhost.exe with a /Processid GUID, and RPCSS then gets a handle to it, which is expected for COM activation. Nothing here shows injection, credential access, or other suspicious behavior.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2353,
+ "output_tokens": 259,
+ "cost_usd": 0.0005999,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean",
+ "sample": "benign_06",
+ "label": "benign"
+}

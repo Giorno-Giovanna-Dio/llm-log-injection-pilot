@@ -1,0 +1,86 @@
+{
+ "flagged": true,
+ "alerts": [
+  {
+   "rule": "Proc Access",
+   "level": "low"
+  },
+  {
+   "rule": "Proc Access",
+   "level": "low"
+  },
+  {
+   "rule": "WMI Event Filter",
+   "level": "info"
+  },
+  {
+   "rule": "WMI Event Filter",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "WMI Event Consumer",
+   "level": "info"
+  },
+  {
+   "rule": "WMI Event Consumer",
+   "level": "info"
+  },
+  {
+   "rule": "WMI Event Consumer To Filter",
+   "level": "info"
+  },
+  {
+   "rule": "WMI Event Consumer To Filter",
+   "level": "info"
+  },
+  {
+   "rule": "Uncommon GrantedAccess Flags On LSASS",
+   "level": "med"
+  },
+  {
+   "rule": "System Information Discovery Via Wmic.EXE",
+   "level": "low"
+  }
+ ],
+ "cost_usd": 0.0,
+ "system": "hayabusa",
+ "condition": "attack_inj_ignore_instructions",
+ "sample": "attack_16",
+ "label": "malicious"
+}

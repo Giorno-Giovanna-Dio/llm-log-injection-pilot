@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1068",
+  "confidence": 0.8,
+  "rationale": "A SYSTEM cmd.exe was spawned by the DcomLaunch svchost hosting the PlugPlay service, which is not normal behavior. It occurred alongside on-demand starts of the fdPHost and wcncsvc service hosts, which matches local privilege escalation exploits such as CVE-2019-1405/1322 that abuse service/COM activation."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1068\", \"confidence\": 0.8, \"rationale\": \"A SYSTEM cmd.exe was spawned by the DcomLaunch svchost hosting the PlugPlay service, which is not normal behavior. It occurred alongside on-demand starts of the fdPHost and wcncsvc service hosts, which matches local privilege escalation exploits such as CVE-2019-1405/1322 that abuse service/COM activation.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 2977,
+ "output_tokens": 640,
+ "cost_usd": 0.018304,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "attack_clean_def",
+ "sample": "attack_09",
+ "label": "malicious"
+}

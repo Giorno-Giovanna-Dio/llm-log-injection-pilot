@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1003.001",
+  "confidence": 0.97,
+  "rationale": "rundll32 invoked comsvcs.dll MiniDump against PID 4868, which is notepad.exe per the Sysmon EID 10 event, and the process was granted full access (0x001fffff) and wrote a dump file. Spawning from WmiPrvSE and the preceding cscript memdump.vbs run point to deliberate, remotely driven credential dumping."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1003.001\", \"confidence\": 0.97, \"rationale\": \"rundll32 invoked comsvcs.dll MiniDump against PID 4868, which is notepad.exe per the Sysmon EID 10 event, and the process was granted full access (0x001fffff) and wrote a dump file. Spawning from WmiPrvSE and the preceding cscript memdump.vbs run point to deliberate, remotely driven credential dumping.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3144,
+ "output_tokens": 230,
+ "cost_usd": 0.00026841,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "attack_clean",
+ "sample": "attack_00",
+ "label": "malicious"
+}

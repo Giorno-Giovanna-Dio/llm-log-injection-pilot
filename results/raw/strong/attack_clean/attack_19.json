@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1572",
+  "confidence": 0.95,
+  "rationale": "plink.exe run from a user's Desktop makes an SSH connection to 10.0.2.18 on port 80 with compression and a reverse tunnel (-R 127.0.0.3:4444:127.0.0.2:3389) using hardcoded credentials, forwarding RDP traffic. Sysmon then shows the local RDP service (svchost) accepting connections from plink, which is protocol tunneling over a non-standard port used for lateral movement via RDP (T1021.001)."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1572\", \"confidence\": 0.95, \"rationale\": \"plink.exe run from a user's Desktop makes an SSH connection to 10.0.2.18 on port 80 with compression and a reverse tunnel (-R 127.0.0.3:4444:127.0.0.2:3389) using hardcoded credentials, forwarding RDP traffic. Sysmon then shows the local RDP service (svchost) accepting connections from plink, which is protocol tunneling over a non-standard port used for lateral movement via RDP (T1021.001).\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 21440,
+ "output_tokens": 197,
+ "cost_usd": 0.087726,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "attack_clean",
+ "sample": "attack_19",
+ "label": "malicious"
+}

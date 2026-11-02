@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1087.001",
+  "confidence": 0.85,
+  "rationale": "The IIS worker process w3wp.exe spawned cmd.exe to run 'net user', a local account enumeration command that is not normal web application behavior, which points to a web shell. The w3wp process also opened cmd.exe with full access (0x001fffff), and its call trace includes unresolved addresses, which suggests injected or dynamically generated code."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1087.001\", \"confidence\": 0.85, \"rationale\": \"The IIS worker process w3wp.exe spawned cmd.exe to run 'net user', a local account enumeration command that is not normal web application behavior, which points to a web shell. The w3wp process also opened cmd.exe with full access (0x001fffff), and its call trace includes unresolved addresses, which suggests injected or dynamically generated code.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3648,
+ "output_tokens": 404,
+ "cost_usd": 0.0009314000000000001,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "attack_clean_def",
+ "sample": "attack_13",
+ "label": "malicious"
+}

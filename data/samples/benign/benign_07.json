@@ -1,0 +1,39 @@
+{
+ "id": "benign_07",
+ "label": "benign",
+ "source": "win10-client sysmon chunk 4340",
+ "tactic": "",
+ "technique_id": "",
+ "events": [
+  {
+   "EventID": 1,
+   "Channel": "Microsoft-Windows-Sysmon/Operational",
+   "Computer": "DESKTOP-A8CALR3",
+   "TimeCreated": "2022-02-08 12:05:28.469730+00:00",
+   "Provider": "Microsoft-Windows-Sysmon",
+   "RuleName": "-",
+   "UtcTime": "2022-02-08 12:05:28.466",
+   "ProcessGuid": "{50a1b328-5c88-6202-c503-000000000600}",
+   "ProcessId": "5284",
+   "Image": "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorsvw.exe",
+   "FileVersion": "4.8.4320.0 built by: NET48REL1LAST_C",
+   "Description": ".NET Runtime Optimization Service",
+   "Product": "Microsoft\u00ae .NET Framework",
+   "Company": "Microsoft Corporation",
+   "OriginalFileName": "mscorsvw.exe",
+   "CommandLine": "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorsvw.exe -StartupEvent 494 -InterruptEvent 0 -NGENProcess 4c8 -Pipe 474 -Comment \"NGen Worker Process\"",
+   "CurrentDirectory": "C:\\Windows\\system32\\",
+   "User": "NT AUTHORITY\\SYSTEM",
+   "LogonGuid": "{50a1b328-23ec-6202-e703-000000000000}",
+   "LogonId": "0x00000000000003e7",
+   "TerminalSessionId": "0",
+   "IntegrityLevel": "System",
+   "Hashes": "SHA1=9B3F155D23569A683A1C1059D539A15A0C08093F,MD5=412A3FB0C25743DA59375C1E298933EA,SHA256=DA1087BA2641EFD77D85E5838AEB6C333E80CAA9F24C889FD2DE2E0B58F8D1A5,IMPHASH=72FA9F3C31A63C45F46299F4E6E1B9CE",
+   "ParentProcessGuid": "{50a1b328-5c48-6202-3e03-000000000600}",
+   "ParentProcessId": "968",
+   "ParentImage": "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\ngen.exe",
+   "ParentCommandLine": "\"C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\ngen.exe\" ExecuteQueuedItems /LegacyServiceBehavior",
+   "ParentUser": "NT AUTHORITY\\SYSTEM"
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "OfficeClickToRun.exe, running as SYSTEM from its standard install path, enables the built-in Office ClickToRun Service Monitor scheduled task and writes Excel.Sheet.12 class keys under its own virtual registry hive. This matches normal Office update and servicing behavior, with no suspicious parent chain, download, or persistence payload."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"OfficeClickToRun.exe, running as SYSTEM from its standard install path, enables the built-in Office ClickToRun Service Monitor scheduled task and writes Excel.Sheet.12 class keys under its own virtual registry hive. This matches normal Office update and servicing behavior, with no suspicious parent chain, download, or persistence payload.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3895,
+ "output_tokens": 267,
+ "cost_usd": 0.0009123,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean",
+ "sample": "benign_10",
+ "label": "benign"
+}

@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.8,
+  "rationale": "The batch shows a SYSTEM-level schtasks.exe deleting a Microsoft Office scheduled task, followed by a normal conhost.exe child with a valid Microsoft signature and routine System raw-volume events. Deleting an Office task can be a minor evasion indicator, but this looks like routine Office maintenance with no suspicious parent, download, or persistence context."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.8, \"rationale\": \"The batch shows a SYSTEM-level schtasks.exe deleting a Microsoft Office scheduled task, followed by a normal conhost.exe child with a valid Microsoft signature and routine System raw-volume events. Deleting an Office task can be a minor evasion indicator, but this looks like routine Office maintenance with no suspicious parent, download, or persistence context.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2502,
+ "output_tokens": 325,
+ "cost_usd": 0.0006627,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean",
+ "sample": "benign_15",
+ "label": "benign"
+}

@@ -1,0 +1,42 @@
+{
+ "flagged": true,
+ "alerts": [
+  {
+   "rule": "File Created",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Injection",
+   "level": "med"
+  },
+  {
+   "rule": "Potential Credential Dumping Via LSASS Process Clone",
+   "level": "crit"
+  },
+  {
+   "rule": "Process Memory Dump via RdrLeakDiag.EXE",
+   "level": "high"
+  },
+  {
+   "rule": "DMP/HDMP File Creation",
+   "level": "low"
+  },
+  {
+   "rule": "Potential Executable Run Itself As Sacrificial Process",
+   "level": "low"
+  }
+ ],
+ "cost_usd": 0.0,
+ "system": "hayabusa",
+ "condition": "attack_inj_fake_admin_note",
+ "sample": "attack_02",
+ "label": "malicious"
+}

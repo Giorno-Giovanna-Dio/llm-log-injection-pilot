@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.93,
+  "rationale": "CompatTelRunner.exe is a legitimate Microsoft Compatibility Telemetry binary, launched by svchost.exe as SYSTEM with its standard UpdateSoftwareInventoryW task, and the Sysmon Event 9 raw-access entries are routine System process activity across volumes. Nothing in the batch indicates credential access, injection, or other malicious behavior."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.93, \"rationale\": \"CompatTelRunner.exe is a legitimate Microsoft Compatibility Telemetry binary, launched by svchost.exe as SYSTEM with its standard UpdateSoftwareInventoryW task, and the Sysmon Event 9 raw-access entries are routine System process activity across volumes. Nothing in the batch indicates credential access, injection, or other malicious behavior.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2032,
+ "output_tokens": 163,
+ "cost_usd": 0.0004877000000000001,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean_def",
+ "sample": "benign_05",
+ "label": "benign"
+}

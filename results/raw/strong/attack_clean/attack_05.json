@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1055",
+  "confidence": 0.85,
+  "rationale": "PowerShell opened Explorer.exe with full access (0x1f3fff) via a call trace through .NET native images ending in UNKNOWN memory, then opened the newly spawned cmd.exe (child of Explorer, in c:\\Users\\Public) with 0x1fffff. This pattern matches PowerShell-driven process injection or parent-PID spoofing into Explorer to spawn a shell. The svchost events are routine service starts."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1055\", \"confidence\": 0.85, \"rationale\": \"PowerShell opened Explorer.exe with full access (0x1f3fff) via a call trace through .NET native images ending in UNKNOWN memory, then opened the newly spawned cmd.exe (child of Explorer, in c:\\\\Users\\\\Public) with 0x1fffff. This pattern matches PowerShell-driven process injection or parent-PID spoofing into Explorer to spawn a shell. The svchost events are routine service starts.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 3290,
+ "output_tokens": 184,
+ "cost_usd": 0.014996,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "attack_clean",
+ "sample": "attack_05",
+ "label": "malicious"
+}

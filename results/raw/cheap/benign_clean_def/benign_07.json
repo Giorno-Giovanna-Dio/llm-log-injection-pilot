@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "The single event is a legitimate .NET Native Image Generator (NGen) worker spawned by ngen.exe running ExecuteQueuedItems, a routine Microsoft-signed framework maintenance activity under SYSTEM. No suspicious parent-child relationship, unusual path, or malicious arguments are present."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"The single event is a legitimate .NET Native Image Generator (NGen) worker spawned by ngen.exe running ExecuteQueuedItems, a routine Microsoft-signed framework maintenance activity under SYSTEM. No suspicious parent-child relationship, unusual path, or malicious arguments are present.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 1771,
+ "output_tokens": 139,
+ "cost_usd": 0.00042350000000000005,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean_def",
+ "sample": "benign_07",
+ "label": "benign"
+}

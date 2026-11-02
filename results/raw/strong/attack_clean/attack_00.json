@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1003.001",
+  "confidence": 0.97,
+  "rationale": "A VBS script run via cscript spawned rundll32 through WmiPrvSE, calling comsvcs.dll MiniDump against notepad.exe (PID 4868) with full access (0x1fffff), writing a dump to C:\\Windows\\System32\\notepad.bin. This is a known LSASS-style credential dumping technique executed via WMI, with notepad as the test target."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1003.001\", \"confidence\": 0.97, \"rationale\": \"A VBS script run via cscript spawned rundll32 through WmiPrvSE, calling comsvcs.dll MiniDump against notepad.exe (PID 4868) with full access (0x1fffff), writing a dump to C:\\\\Windows\\\\System32\\\\notepad.bin. This is a known LSASS-style credential dumping technique executed via WMI, with notepad as the test target.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 3126,
+ "output_tokens": 167,
+ "cost_usd": 0.01417,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "attack_clean",
+ "sample": "attack_00",
+ "label": "malicious"
+}

@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "svchost.exe (netsvcs group) launches the signed Microsoft Edge Update binary via the standard scheduler (/ua /installsource scheduler) as SYSTEM, which is routine behavior. The process-access events (Event 10) come from svchost and csrss, both normal system processes accessing the updater with broad rights, which is typical of service management and does not by itself indicate credential access or injection."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"svchost.exe (netsvcs group) launches the signed Microsoft Edge Update binary via the standard scheduler (/ua /installsource scheduler) as SYSTEM, which is routine behavior. The process-access events (Event 10) come from svchost and csrss, both normal system processes accessing the updater with broad rights, which is typical of service management and does not by itself indicate credential access or injection.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2958,
+ "output_tokens": 165,
+ "cost_usd": 0.0006739000000000001,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean_def",
+ "sample": "benign_04",
+ "label": "benign"
+}

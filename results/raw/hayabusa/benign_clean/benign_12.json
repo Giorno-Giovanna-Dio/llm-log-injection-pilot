@@ -1,0 +1,14 @@
+{
+ "flagged": false,
+ "alerts": [
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  }
+ ],
+ "cost_usd": 0.0,
+ "system": "hayabusa",
+ "condition": "benign_clean",
+ "sample": "benign_12",
+ "label": "benign"
+}

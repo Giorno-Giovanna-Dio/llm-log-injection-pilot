@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.95,
+  "rationale": "CompatTelRunner.exe is a legitimate signed Microsoft telemetry binary launched from svchost.exe as SYSTEM with its standard arguments (aeinv.dll UpdateSoftwareInventoryW). The Sysmon EventID 9 raw disk access events are from the System process (PID 4) against volumes, which is normal OS behavior."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.95, \"rationale\": \"CompatTelRunner.exe is a legitimate signed Microsoft telemetry binary launched from svchost.exe as SYSTEM with its standard arguments (aeinv.dll UpdateSoftwareInventoryW). The Sysmon EventID 9 raw disk access events are from the System process (PID 4) against volumes, which is normal OS behavior.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 1873,
+ "output_tokens": 155,
+ "cost_usd": 0.009038000000000001,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean",
+ "sample": "benign_05",
+ "label": "benign"
+}

@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "This is a routine COM Surrogate (dllhost.exe) launch spawned by svchost DcomLaunch as SYSTEM, followed by csrss and RPC process-handle access and loads of signed Microsoft system DLLs, all typical for COM activation. The raw volume reads by System (Event 9) are common background disk activity and nothing here shows credential access, injection, or unsigned code."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"This is a routine COM Surrogate (dllhost.exe) launch spawned by svchost DcomLaunch as SYSTEM, followed by csrss and RPC process-handle access and loads of signed Microsoft system DLLs, all typical for COM activation. The raw volume reads by System (Event 9) are common background disk activity and nothing here shows credential access, injection, or unsigned code.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 6298,
+ "output_tokens": 419,
+ "cost_usd": 0.0014689000000000002,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean",
+ "sample": "benign_01",
+ "label": "benign"
+}

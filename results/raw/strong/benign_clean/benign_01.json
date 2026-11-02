@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.85,
+  "rationale": "This is a normal DllHost.exe COM Surrogate launch by svchost (DcomLaunch) from System32, with only validly signed Microsoft DLLs loaded. The 0x1fffff process access from svchost and csrss is the usual process-creation handle pattern, and the CallTrace goes through rpcss/RPCRT4 and CSRSRV/basesrv with no unbacked memory or injection indicators."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.85, \"rationale\": \"This is a normal DllHost.exe COM Surrogate launch by svchost (DcomLaunch) from System32, with only validly signed Microsoft DLLs loaded. The 0x1fffff process access from svchost and csrss is the usual process-creation handle pattern, and the CallTrace goes through rpcss/RPCRT4 and CSRSRV/basesrv with no unbacked memory or injection indicators.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 6280,
+ "output_tokens": 173,
+ "cost_usd": 0.026846,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean",
+ "sample": "benign_01",
+ "label": "benign"
+}

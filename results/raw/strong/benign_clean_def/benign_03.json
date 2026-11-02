@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.95,
+  "rationale": "GoogleCrashHandler.exe launched from its standard Program Files path by GoogleUpdate.exe (/c) as SYSTEM is normal Google Update behavior, with matching metadata and no suspicious command line or parent."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.95, \"rationale\": \"GoogleCrashHandler.exe launched from its standard Program Files path by GoogleUpdate.exe (/c) as SYSTEM is normal Google Update behavior, with matching metadata and no suspicious command line or parent.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 1648,
+ "output_tokens": 111,
+ "cost_usd": 0.007698,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean_def",
+ "sample": "benign_03",
+ "label": "benign"
+}

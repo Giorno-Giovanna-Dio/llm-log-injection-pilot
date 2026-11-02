@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.93,
+  "rationale": "This is the normal Office Click-to-Run service (OfficeClickToRun.exe) launching the signed Microsoft Integrator.exe with standard MSI streaming arguments. The 0x1fffff process access from the parent and csrss.exe is typical for process creation, and the image is validly signed with no suspicious behavior."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.93, \"rationale\": \"This is the normal Office Click-to-Run service (OfficeClickToRun.exe) launching the signed Microsoft Integrator.exe with standard MSI streaming arguments. The 0x1fffff process access from the parent and csrss.exe is typical for process creation, and the image is validly signed with no suspicious behavior.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 3522,
+ "output_tokens": 141,
+ "cost_usd": 0.015494,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean_def",
+ "sample": "benign_13",
+ "label": "benign"
+}

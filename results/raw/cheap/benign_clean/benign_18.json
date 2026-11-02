@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "This is a normal user launch of Pidgin from explorer.exe, with the call traces showing shell/appresolver activity. The follow-on process handle opens come from csrss, svchost (PcaSvc and psmserviceexthost) and explorer's own launch path, which are typical system behaviors with no injection, credential access, or suspicious parent-child chains."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"This is a normal user launch of Pidgin from explorer.exe, with the call traces showing shell/appresolver activity. The follow-on process handle opens come from csrss, svchost (PcaSvc and psmserviceexthost) and explorer's own launch path, which are typical system behaviors with no injection, credential access, or suspicious parent-child chains.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 4621,
+ "output_tokens": 716,
+ "cost_usd": 0.001282,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean",
+ "sample": "benign_18",
+ "label": "benign"
+}

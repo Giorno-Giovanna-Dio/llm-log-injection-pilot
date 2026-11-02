@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.95,
+  "rationale": "CompatTelRunner.exe is a signed Microsoft Compatibility Telemetry binary running as SYSTEM under a standard svchost parent, executing its normal UpdateSoftwareInventoryW task. The accompanying Sysmon EventID 9 raw-access events from the System process across HarddiskVolume1-3 are consistent with routine Windows system/indexing activity and show no sign of credential dumping or tampering."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.95, \"rationale\": \"CompatTelRunner.exe is a signed Microsoft Compatibility Telemetry binary running as SYSTEM under a standard svchost parent, executing its normal UpdateSoftwareInventoryW task. The accompanying Sysmon EventID 9 raw-access events from the System process across HarddiskVolume1-3 are consistent with routine Windows system/indexing activity and show no sign of credential dumping or tampering.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 1892,
+ "output_tokens": 177,
+ "cost_usd": 0.0004667,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean",
+ "sample": "benign_05",
+ "label": "benign"
+}

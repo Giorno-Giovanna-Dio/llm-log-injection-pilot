@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.93,
+  "rationale": "This is normal Office Click-to-Run behavior: the signed OfficeClickToRun.exe service (SYSTEM) launches Integrator.exe from its legitimate path with standard MSI integration arguments. The 0x1fffff access from the parent and csrss.exe is the expected process-creation handle pattern, and the image is validly signed by Microsoft."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.93, \"rationale\": \"This is normal Office Click-to-Run behavior: the signed OfficeClickToRun.exe service (SYSTEM) launches Integrator.exe from its legitimate path with standard MSI integration arguments. The 0x1fffff access from the parent and csrss.exe is the expected process-creation handle pattern, and the image is validly signed by Microsoft.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 3385,
+ "output_tokens": 153,
+ "cost_usd": 0.015066000000000001,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean",
+ "sample": "benign_13",
+ "label": "benign"
+}

@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1047",
+  "confidence": 0.92,
+  "rationale": "A WmiPrvSE.exe parent spawns cmd.exe with output redirected to an ADMIN$ share file named with a timestamp (the Impacket wmiexec pattern), then runs 'whoami /all' for discovery. This is remote command execution via WMI, with SMB loopback traffic to port 445 consistent with the same activity."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1047\", \"confidence\": 0.92, \"rationale\": \"A WmiPrvSE.exe parent spawns cmd.exe with output redirected to an ADMIN$ share file named with a timestamp (the Impacket wmiexec pattern), then runs 'whoami /all' for discovery. This is remote command execution via WMI, with SMB loopback traffic to port 445 consistent with the same activity.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3631,
+ "output_tokens": 360,
+ "cost_usd": 0.000906,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "attack_clean",
+ "sample": "attack_10",
+ "label": "malicious"
+}

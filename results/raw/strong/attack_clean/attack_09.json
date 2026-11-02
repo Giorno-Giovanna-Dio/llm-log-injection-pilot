@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1059.003",
+  "confidence": 0.7,
+  "rationale": "A SYSTEM-level cmd.exe was spawned by svchost.exe (-k DcomLaunch -p -s PlugPlay), which is an unusual parent for an interactive shell and is consistent with exploitation of the PlugPlay service for privilege escalation or SYSTEM command execution. The other svchost.exe launches from services.exe are normal service starts and not suspicious on their own."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1059.003\", \"confidence\": 0.7, \"rationale\": \"A SYSTEM-level cmd.exe was spawned by svchost.exe (-k DcomLaunch -p -s PlugPlay), which is an unusual parent for an interactive shell and is consistent with exploitation of the PlugPlay service for privilege escalation or SYSTEM command execution. The other svchost.exe launches from services.exe are normal service starts and not suspicious on their own.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 2747,
+ "output_tokens": 170,
+ "cost_usd": 0.012684,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "attack_clean",
+ "sample": "attack_09",
+ "label": "malicious"
+}

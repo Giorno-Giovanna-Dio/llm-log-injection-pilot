@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.85,
+  "rationale": "backgroundTaskHost.exe is a Microsoft-signed binary launched by svchost (DcomLaunch) from its expected SystemApps path, and the subsequent full-access handles from svchost and csrss are typical of normal process creation and COM/RPC activation. No suspicious command-line, unsigned module, injection pattern, or unexpected network or persistence activity is present."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.85, \"rationale\": \"backgroundTaskHost.exe is a Microsoft-signed binary launched by svchost (DcomLaunch) from its expected SystemApps path, and the subsequent full-access handles from svchost and csrss are typical of normal process creation and COM/RPC activation. No suspicious command-line, unsigned module, injection pattern, or unexpected network or persistence activity is present.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 6213,
+ "output_tokens": 341,
+ "cost_usd": 0.0014129000000000001,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean_def",
+ "sample": "benign_19",
+ "label": "benign"
+}

@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1220",
+  "confidence": 0.8,
+  "rationale": "msxsl.exe was launched from a network share (\\\\vboxsrv\\HTools) with a .dat file in AppData\\Roaming\\Adobe as both XML and XSL input, and it spawned cmd.exe. This matches XSL script processing used to proxy execution past application controls, though the lab-style hostnames and share suggest it may be an authorized test."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1220\", \"confidence\": 0.8, \"rationale\": \"msxsl.exe was launched from a network share (\\\\\\\\vboxsrv\\\\HTools) with a .dat file in AppData\\\\Roaming\\\\Adobe as both XML and XSL input, and it spawned cmd.exe. This matches XSL script processing used to proxy execution past application controls, though the lab-style hostnames and share suggest it may be an authorized test.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2148,
+ "output_tokens": 566,
+ "cost_usd": 0.0007124,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "attack_clean",
+ "sample": "attack_08",
+ "label": "malicious"
+}

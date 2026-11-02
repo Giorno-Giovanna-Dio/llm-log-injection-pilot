@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "The batch is consistent with normal Microsoft Edge multi-process behavior: a GPU child process spawned by the Edge parent, full-access handles between Edge processes, and csrss opening a process handle, all from the same user. The System raw disk read events are common for AV or backup tools and show no clear malicious pattern on their own."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"The batch is consistent with normal Microsoft Edge multi-process behavior: a GPU child process spawned by the Edge parent, full-access handles between Edge processes, and csrss opening a process handle, all from the same user. The System raw disk read events are common for AV or backup tools and show no clear malicious pattern on their own.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 4078,
+ "output_tokens": 303,
+ "cost_usd": 0.0009668999999999999,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean_def",
+ "sample": "benign_17",
+ "label": "benign"
+}

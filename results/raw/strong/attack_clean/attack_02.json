@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1003.001",
+  "confidence": 0.96,
+  "rationale": "rdrleakdiag.exe was run from a cmd.exe shell with /p 668 /fullmemdmp targeting lsass.exe (PID 668), created a remote thread in lsass, and wrote minidump_668.dmp to the user's Desktop. This is a known LOLBin technique for dumping LSASS memory to harvest credentials."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1003.001\", \"confidence\": 0.96, \"rationale\": \"rdrleakdiag.exe was run from a cmd.exe shell with /p 668 /fullmemdmp targeting lsass.exe (PID 668), created a remote thread in lsass, and wrote minidump_668.dmp to the user's Desktop. This is a known LOLBin technique for dumping LSASS memory to harvest credentials.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 2298,
+ "output_tokens": 154,
+ "cost_usd": 0.010728,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "attack_clean",
+ "sample": "attack_02",
+ "label": "malicious"
+}

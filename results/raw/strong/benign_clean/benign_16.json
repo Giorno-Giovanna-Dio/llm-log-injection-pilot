@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "This is the normal startup of SearchIndexer.exe (/Embedding) by services.exe from System32. All loaded DLLs are Microsoft-signed system libraries, and the full-access handles from services.exe and csrss.exe are routine process creation behavior, with no injection, odd paths, or suspicious child processes."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"This is the normal startup of SearchIndexer.exe (/Embedding) by services.exe from System32. All loaded DLLs are Microsoft-signed system libraries, and the full-access handles from services.exe and csrss.exe are routine process creation behavior, with no injection, odd paths, or suspicious child processes.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 6580,
+ "output_tokens": 139,
+ "cost_usd": 0.027705999999999998,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean",
+ "sample": "benign_16",
+ "label": "benign"
+}

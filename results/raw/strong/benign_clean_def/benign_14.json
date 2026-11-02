@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.88,
+  "rationale": "Office Click-to-Run's Integrator.exe (SYSTEM, legitimate path) spawned schtasks.exe to delete the Microsoft\\Office\\OfficeBackgroundTaskHandlerLogon task, which is routine Office install/update behavior. The 0x1fffff process access events come from the parent and csrss.exe during process creation, so they are expected and not injection."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.88, \"rationale\": \"Office Click-to-Run's Integrator.exe (SYSTEM, legitimate path) spawned schtasks.exe to delete the Microsoft\\\\Office\\\\OfficeBackgroundTaskHandlerLogon task, which is routine Office install/update behavior. The 0x1fffff process access events come from the parent and csrss.exe during process creation, so they are expected and not injection.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 3209,
+ "output_tokens": 163,
+ "cost_usd": 0.014462000000000001,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean_def",
+ "sample": "benign_14",
+ "label": "benign"
+}

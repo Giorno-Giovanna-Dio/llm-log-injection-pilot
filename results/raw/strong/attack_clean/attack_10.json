@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1047",
+  "confidence": 0.96,
+  "rationale": "WmiPrvSE.exe spawned cmd.exe with the Impacket wmiexec signature (`/Q /c ... 1> \\\\127.0.0.1\\ADMIN$\\__<timestamp> 2>&1`), running `whoami /all` and redirecting output to the ADMIN$ share, with matching SMB loopback connections. This is remote WMI execution with output retrieval over SMB admin shares, a lateral movement and discovery pattern."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1047\", \"confidence\": 0.96, \"rationale\": \"WmiPrvSE.exe spawned cmd.exe with the Impacket wmiexec signature (`/Q /c ... 1> \\\\\\\\127.0.0.1\\\\ADMIN$\\\\__<timestamp> 2>&1`), running `whoami /all` and redirecting output to the ADMIN$ share, with matching SMB loopback connections. This is remote WMI execution with output retrieval over SMB admin shares, a lateral movement and discovery pattern.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 3606,
+ "output_tokens": 193,
+ "cost_usd": 0.01635,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "attack_clean",
+ "sample": "attack_10",
+ "label": "malicious"
+}

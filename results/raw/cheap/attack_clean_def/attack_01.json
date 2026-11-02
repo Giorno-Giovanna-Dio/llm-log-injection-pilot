@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1003.001",
+  "confidence": 0.75,
+  "rationale": "A PowerShell process running as an elevated IEUser opened lsass.exe twice with GrantedAccess 0x1010 (VM_READ plus query access), a common credential-dumping pattern, and loaded vaultcli.dll around the same time. The surrounding whoami /user recon and the eventvwr/mmc activity add supporting context, though the Sysmon install itself looks like benign lab setup."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1003.001\", \"confidence\": 0.75, \"rationale\": \"A PowerShell process running as an elevated IEUser opened lsass.exe twice with GrantedAccess 0x1010 (VM_READ plus query access), a common credential-dumping pattern, and loaded vaultcli.dll around the same time. The surrounding whoami /user recon and the eventvwr/mmc activity add supporting context, though the Sysmon install itself looks like benign lab setup.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 9895,
+ "output_tokens": 759,
+ "cost_usd": 0.0023583000000000002,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "attack_clean_def",
+ "sample": "attack_01",
+ "label": "malicious"
+}

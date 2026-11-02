@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "This is normal Edge behavior: the browser parent launches its own GPU child process, and the full-access handles come from the parent msedge.exe and csrss.exe, which is standard for process creation. The ntdll load is signed and valid, and the volume-mount events are routine, so there is no sign of injection or malicious activity."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"This is normal Edge behavior: the browser parent launches its own GPU child process, and the full-access handles come from the parent msedge.exe and csrss.exe, which is standard for process creation. The ntdll load is signed and valid, and the volume-mount events are routine, so there is no sign of injection or malicious activity.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 4050,
+ "output_tokens": 137,
+ "cost_usd": 0.017566000000000002,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean_def",
+ "sample": "benign_17",
+ "label": "benign"
+}

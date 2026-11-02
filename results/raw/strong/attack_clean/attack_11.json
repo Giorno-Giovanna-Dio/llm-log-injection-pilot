@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1021.006",
+  "confidence": 0.7,
+  "rationale": "WinRM remote shell (winrshost.exe spawned via DcomLaunch) running cmd.exe /C ipconfig as Administrator with High integrity indicates remote command execution and network configuration discovery (T1016). The activity is consistent with lateral movement or hands-on-keyboard reconnaissance, though the single benign command leaves some chance of legitimate admin use."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1021.006\", \"confidence\": 0.7, \"rationale\": \"WinRM remote shell (winrshost.exe spawned via DcomLaunch) running cmd.exe /C ipconfig as Administrator with High integrity indicates remote command execution and network configuration discovery (T1016). The activity is consistent with lateral movement or hands-on-keyboard reconnaissance, though the single benign command leaves some chance of legitimate admin use.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 2226,
+ "output_tokens": 164,
+ "cost_usd": 0.010539999999999999,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "attack_clean",
+ "sample": "attack_11",
+ "label": "malicious"
+}

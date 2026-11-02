@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1546.008",
+  "confidence": 0.8,
+  "rationale": "Utilman.exe launched with /debug as SYSTEM spawned osk.exe, which then ran whoami, a pattern consistent with an accessibility-feature backdoor. The osk.exe image reports the description 'Windows Command Processor' (cmd.exe's description), which suggests a masqueraded or replaced binary."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1546.008\", \"confidence\": 0.8, \"rationale\": \"Utilman.exe launched with /debug as SYSTEM spawned osk.exe, which then ran whoami, a pattern consistent with an accessibility-feature backdoor. The osk.exe image reports the description 'Windows Command Processor' (cmd.exe's description), which suggests a masqueraded or replaced binary.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2135,
+ "output_tokens": 624,
+ "cost_usd": 0.0007388,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "attack_clean_def",
+ "sample": "attack_14",
+ "label": "malicious"
+}

@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.93,
+  "rationale": "OfficeClickToRun.exe (legitimate signed Microsoft binary, running as SYSTEM from its normal path) spawned schtasks.exe to re-enable its own 'Office ClickToRun Service Monitor' task and wrote its usual virtualized Office registry keys under the ClickToRun hive. This is routine Office maintenance behavior, not persistence or tampering."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.93, \"rationale\": \"OfficeClickToRun.exe (legitimate signed Microsoft binary, running as SYSTEM from its normal path) spawned schtasks.exe to re-enable its own 'Office ClickToRun Service Monitor' task and wrote its usual virtualized Office registry keys under the ClickToRun hive. This is routine Office maintenance behavior, not persistence or tampering.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 4018,
+ "output_tokens": 162,
+ "cost_usd": 0.017688,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean_def",
+ "sample": "benign_10",
+ "label": "benign"
+}

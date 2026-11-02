@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1546.008",
+  "confidence": 0.93,
+  "rationale": "Utilman.exe was launched with a /debug argument and spawned osk.exe as SYSTEM in the logon session (LogonUI context), indicating an Accessibility Features / Image File Execution Options-style debugger hijack. The follow-on 'whoami' run by osk.exe as SYSTEM confirms an attacker verifying privileged access at the logon screen."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1546.008\", \"confidence\": 0.93, \"rationale\": \"Utilman.exe was launched with a /debug argument and spawned osk.exe as SYSTEM in the logon session (LogonUI context), indicating an Accessibility Features / Image File Execution Options-style debugger hijack. The follow-on 'whoami' run by osk.exe as SYSTEM confirms an attacker verifying privileged access at the logon screen.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 2110,
+ "output_tokens": 161,
+ "cost_usd": 0.010046000000000001,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "attack_clean_def",
+ "sample": "attack_14",
+ "label": "malicious"
+}

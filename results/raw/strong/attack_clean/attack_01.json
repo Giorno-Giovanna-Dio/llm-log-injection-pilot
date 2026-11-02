@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1003.001",
+  "confidence": 0.9,
+  "rationale": "An interactive PowerShell process (PID 1200) loaded credential-related DLLs (cryptdll, samlib, vaultcli, WinSCard, hid) and opened lsass.exe with GrantedAccess 0x1010 twice, which matches Mimikatz-style LSASS credential dumping. The eventvwr.exe \u2192 mmc.exe chain is also consistent with a UAC bypass test, and the whoami /user calls suggest post-exploitation discovery."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1003.001\", \"confidence\": 0.9, \"rationale\": \"An interactive PowerShell process (PID 1200) loaded credential-related DLLs (cryptdll, samlib, vaultcli, WinSCard, hid) and opened lsass.exe with GrantedAccess 0x1010 twice, which matches Mimikatz-style LSASS credential dumping. The eventvwr.exe \u2192 mmc.exe chain is also consistent with a UAC bypass test, and the whoami /user calls suggest post-exploitation discovery.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 9552,
+ "output_tokens": 196,
+ "cost_usd": 0.040164,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "attack_clean",
+ "sample": "attack_01",
+ "label": "malicious"
+}

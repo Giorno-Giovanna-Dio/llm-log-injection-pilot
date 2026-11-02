@@ -1,0 +1,22 @@
+{
+ "flagged": true,
+ "alerts": [
+  {
+   "rule": "Proc Access",
+   "level": "low"
+  },
+  {
+   "rule": "Proc Access",
+   "level": "low"
+  },
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  }
+ ],
+ "cost_usd": 0.0,
+ "system": "hayabusa",
+ "condition": "benign_clean",
+ "sample": "benign_04",
+ "label": "benign"
+}

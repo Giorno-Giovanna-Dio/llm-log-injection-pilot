@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1218.010",
+  "confidence": 0.9,
+  "rationale": "regsvr32.exe runs with /i pointing to a remote .sct scriptlet on raw.githubusercontent.com via scrobj.dll (the Squiblydoo pattern), and Sysmon event 3 shows that process making an outbound HTTPS connection, which indicates a proxy-execution and download chain. The other processes in the batch are routine Windows activity."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1218.010\", \"confidence\": 0.9, \"rationale\": \"regsvr32.exe runs with /i pointing to a remote .sct scriptlet on raw.githubusercontent.com via scrobj.dll (the Squiblydoo pattern), and Sysmon event 3 shows that process making an outbound HTTPS connection, which indicates a proxy-execution and download chain. The other processes in the batch are routine Windows activity.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3615,
+ "output_tokens": 253,
+ "cost_usd": 0.0008493,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "attack_clean_def",
+ "sample": "attack_15",
+ "label": "malicious"
+}

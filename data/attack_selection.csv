@@ -1,0 +1,21 @@
+tactic,file,technique_id,technique_name
+Credential Access,sysmon_10_1_memdump_comsvcs_minidump.evtx,T1003.001,LSASS Memory dump via comsvcs.dll
+Credential Access,babyshark_mimikatz_powershell.evtx,T1003.001,Mimikatz via PowerShell
+Credential Access,sysmon_rdrleakdiag_lsass_dump.evtx,T1003.001,LSASS dump via rdrleakdiag
+Defense Evasion,de_hiding_files_via_attrib_cmdlet.evtx,T1564.001,Hidden files via attrib
+Defense Evasion,de_portforward_netsh_rdp_sysmon_13_1.evtx,T1090,Port forwarding via netsh
+Defense Evasion,sysmon_10_1_ppid_spoofing.evtx,T1134.004,Parent PID spoofing
+Execution,exec_sysmon_1_lolbin_renamed_regsvr32_scrobj.evtx,T1218.010,Renamed regsvr32 scrobj
+Execution,sysmon_mshta_sharpshooter_stageless_meterpreter.evtx,T1218.005,mshta stageless meterpreter
+Execution,exec_msxsl_xsl_sysmon_1_7.evtx,T1220,msxsl XSL script processing
+Execution,revshell_cmd_svchost_sysmon_1.evtx,T1059.003,Reverse shell cmd from svchost
+Lateral Movement,LM_wmiexec_impacket_sysmon_whoami.evtx,T1047,Impacket wmiexec
+Lateral Movement,LM_winrm_exec_sysmon_1_winrshost.evtx,T1021.006,WinRM remote exec
+Lateral Movement,sysmon_1_exec_via_sql_xpcmdshell.evtx,T1505.001,SQL xp_cmdshell exec
+Lateral Movement,LM_typical_IIS_webshell_sysmon_1_10_traces.evtx,T1505.003,IIS webshell
+Persistence,persistence_accessibility_features_osk_sysmon1.evtx,T1546.008,Accessibility features (osk)
+Persistence,sysmon_1_persist_bitsjob_SetNotifyCmdLine.evtx,T1197,BITS job notify cmdline
+Persistence,sysmon_20_21_1_CommandLineEventConsumer.evtx,T1546.003,WMI CommandLineEventConsumer
+Privilege Escalation,Sysmon_13_1_UAC_Bypass_EventVwrBypass.evtx,T1548.002,UAC bypass via eventvwr
+Privilege Escalation,sysmon_1_11_exec_as_system_via_schedtask.evtx,T1053.005,Exec as SYSTEM via schtasks
+Command and Control,DE_sysmon-3-rdp-tun.evtx,T1572,RDP tunneling

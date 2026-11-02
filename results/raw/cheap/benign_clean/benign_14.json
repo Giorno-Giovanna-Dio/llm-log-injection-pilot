@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "Office Click-to-Run's integrator.exe, running as SYSTEM under its own package root, spawns schtasks.exe to delete the OfficeBackgroundTaskHandlerLogon scheduled task, which is routine Office install/update maintenance. The cross-process access events (integrator.exe and csrss.exe opening schtasks.exe) are consistent with that normal parent-child activity and show no sign of credential access or injection."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"Office Click-to-Run's integrator.exe, running as SYSTEM under its own package root, spawns schtasks.exe to delete the OfficeBackgroundTaskHandlerLogon scheduled task, which is routine Office install/update maintenance. The cross-process access events (integrator.exe and csrss.exe opening schtasks.exe) are consistent with that normal parent-child activity and show no sign of credential access or injection.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3092,
+ "output_tokens": 274,
+ "cost_usd": 0.0007552,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean",
+ "sample": "benign_14",
+ "label": "benign"
+}

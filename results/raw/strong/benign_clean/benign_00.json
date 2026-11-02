@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "MpCmdRun.exe is launched from the legitimate Defender platform path by MsMpEng.exe as SYSTEM to run a scheduled signature update. The csrss.exe access to the new process is normal process creation behavior, and the Python installer termination from a Temp bundle directory and the raw disk-volume events are routine."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"MpCmdRun.exe is launched from the legitimate Defender platform path by MsMpEng.exe as SYSTEM to run a scheduled signature update. The csrss.exe access to the new process is normal process creation behavior, and the Python installer termination from a Temp bundle directory and the raw disk-volume events are routine.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 2763,
+ "output_tokens": 142,
+ "cost_usd": 0.012468,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean",
+ "sample": "benign_00",
+ "label": "benign"
+}

@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1003.001",
+  "confidence": 0.93,
+  "rationale": "rdrleakdiag.exe, a signed Windows diagnostic tool, was run with /p 668 /fullmemdmp against lsass.exe (PID 668), opened a remote thread in LSASS, and wrote minidump_668.dmp to the Desktop. This is a known LSASS credential-dumping technique (LOLBin abuse), and the Sysmon events show the full chain from process access to dump file creation."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1003.001\", \"confidence\": 0.93, \"rationale\": \"rdrleakdiag.exe, a signed Windows diagnostic tool, was run with /p 668 /fullmemdmp against lsass.exe (PID 668), opened a remote thread in LSASS, and wrote minidump_668.dmp to the Desktop. This is a known LSASS credential-dumping technique (LOLBin abuse), and the Sysmon events show the full chain from process access to dump file creation.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2485,
+ "output_tokens": 272,
+ "cost_usd": 0.0006328,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "attack_clean_def",
+ "sample": "attack_02",
+ "label": "malicious"
+}

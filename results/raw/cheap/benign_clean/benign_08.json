@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "The parent is an Office installer (E:\\Office\\Setup32.exe ELEVATED) running a hidden PowerShell check for Microsoft.Office.Desktop and writing a 'Centennial.Detection' scratch file, which matches Office setup's normal install-state detection. The full-access handle from the installer and the csrss access are consistent with routine process handling, and nothing here shows persistence, credential access, or download-and-execute behavior."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"The parent is an Office installer (E:\\\\Office\\\\Setup32.exe ELEVATED) running a hidden PowerShell check for Microsoft.Office.Desktop and writing a 'Centennial.Detection' scratch file, which matches Office setup's normal install-state detection. The full-access handle from the installer and the csrss access are consistent with routine process handling, and nothing here shows persistence, credential access, or download-and-execute behavior.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3139,
+ "output_tokens": 280,
+ "cost_usd": 0.0007676,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean",
+ "sample": "benign_08",
+ "label": "benign"
+}

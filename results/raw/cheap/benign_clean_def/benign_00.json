@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.85,
+  "rationale": "The batch is consistent with routine Microsoft Defender signature updates run by MsMpEng as SYSTEM, plus a Python installer exiting from a Temp directory. The raw volume access events (EID 9) by the System process are ambiguous but commonly come from AV or backup tools, and nothing here shows credential access, injection, or persistence."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.85, \"rationale\": \"The batch is consistent with routine Microsoft Defender signature updates run by MsMpEng as SYSTEM, plus a Python installer exiting from a Temp directory. The raw volume access events (EID 9) by the System process are ambiguous but commonly come from AV or backup tools, and nothing here shows credential access, injection, or persistence.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2920,
+ "output_tokens": 322,
+ "cost_usd": 0.0007448,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean_def",
+ "sample": "benign_00",
+ "label": "benign"
+}

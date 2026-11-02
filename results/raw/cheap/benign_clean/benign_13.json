@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.95,
+  "rationale": "The batch is routine Microsoft Office Click-to-Run servicing: the signed Microsoft Integrator.exe is spawned by OfficeClickToRun.exe running as SYSTEM with expected MSI/PackageRoot arguments, and the process-access events come from the parent service and csrss during normal process creation. Nothing indicates injection, credential access, or unsigned or masqueraded binaries."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.95, \"rationale\": \"The batch is routine Microsoft Office Click-to-Run servicing: the signed Microsoft Integrator.exe is spawned by OfficeClickToRun.exe running as SYSTEM with expected MSI/PackageRoot arguments, and the process-access events come from the parent service and csrss during normal process creation. Nothing indicates injection, credential access, or unsigned or masqueraded binaries.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3401,
+ "output_tokens": 247,
+ "cost_usd": 0.0008035000000000001,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean",
+ "sample": "benign_13",
+ "label": "benign"
+}

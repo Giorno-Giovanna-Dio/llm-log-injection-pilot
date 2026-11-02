@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1003.001",
+  "confidence": 0.7,
+  "rationale": "An interactive PowerShell session opened lsass.exe twice with GrantedAccess 0x1010 (memory read rights), a common LSASS credential-access pattern, and then loaded vaultcli.dll, which suggests credential vault enumeration. The surrounding Sysmon install and benign whoami/eventvwr activity could be a lab setup, so confidence is moderate."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1003.001\", \"confidence\": 0.7, \"rationale\": \"An interactive PowerShell session opened lsass.exe twice with GrantedAccess 0x1010 (memory read rights), a common LSASS credential-access pattern, and then loaded vaultcli.dll, which suggests credential vault enumeration. The surrounding Sysmon install and benign whoami/eventvwr activity could be a lab setup, so confidence is moderate.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 9572,
+ "output_tokens": 741,
+ "cost_usd": 0.0022847,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "attack_clean",
+ "sample": "attack_01",
+ "label": "malicious"
+}

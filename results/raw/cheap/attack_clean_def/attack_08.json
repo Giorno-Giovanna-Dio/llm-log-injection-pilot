@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1220",
+  "confidence": 0.8,
+  "rationale": "msxsl.exe (an XSLT processor) was run from a network share (\\\\vboxsrv\\HTools) against a .dat file in a user's AppData\\Roaming\\Adobe folder, and it spawned cmd.exe, which is not normal XSLT processing behaviour. This matches the living-off-the-land pattern of using msxsl to execute XSL script payloads, though the batch alone does not confirm the payload's content."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1220\", \"confidence\": 0.8, \"rationale\": \"msxsl.exe (an XSLT processor) was run from a network share (\\\\\\\\vboxsrv\\\\HTools) against a .dat file in a user's AppData\\\\Roaming\\\\Adobe folder, and it spawned cmd.exe, which is not normal XSLT processing behaviour. This matches the living-off-the-land pattern of using msxsl to execute XSL script payloads, though the batch alone does not confirm the payload's content.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2312,
+ "output_tokens": 487,
+ "cost_usd": 0.0007057000000000001,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "attack_clean_def",
+ "sample": "attack_08",
+ "label": "malicious"
+}

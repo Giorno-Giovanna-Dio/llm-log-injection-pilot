@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.95,
+  "rationale": "AppVShNotify.exe is a signed Microsoft App-V component launched by the legitimate OfficeClickToRun.exe service from its standard install path, running as SYSTEM with expected paths and metadata. This is normal Office update/notification behavior with no suspicious indicators."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.95, \"rationale\": \"AppVShNotify.exe is a signed Microsoft App-V component launched by the legitimate OfficeClickToRun.exe service from its standard install path, running as SYSTEM with expected paths and metadata. This is normal Office update/notification behavior with no suspicious indicators.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 1576,
+ "output_tokens": 168,
+ "cost_usd": 0.00039900000000000005,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean",
+ "sample": "benign_12",
+ "label": "benign"
+}

@@ -1,0 +1,39 @@
+{
+ "id": "benign_12",
+ "label": "benign",
+ "source": "win10-client sysmon chunk 9070",
+ "tactic": "",
+ "technique_id": "",
+ "events": [
+  {
+   "EventID": 1,
+   "Channel": "Microsoft-Windows-Sysmon/Operational",
+   "Computer": "DESKTOP-A8CALR3",
+   "TimeCreated": "2022-02-08 12:11:51.022549+00:00",
+   "Provider": "Microsoft-Windows-Sysmon",
+   "RuleName": "-",
+   "UtcTime": "2022-02-08 12:11:51.016",
+   "ProcessGuid": "{50a1b328-5e07-6202-8106-000000000600}",
+   "ProcessId": "4880",
+   "Image": "C:\\Program Files\\Common Files\\microsoft shared\\ClickToRun\\AppVShNotify.exe",
+   "FileVersion": "5.1.140.0",
+   "Description": "AppVShNotify",
+   "Product": "Microsoft Application Virtualization (App-V)",
+   "Company": "Microsoft Corporation",
+   "OriginalFileName": "AppVShNotify.exe",
+   "CommandLine": "\"C:\\Program Files\\Common Files\\Microsoft Shared\\ClickToRun\\AppVShNotify.exe\"",
+   "CurrentDirectory": "C:\\Program Files\\Common Files\\Microsoft Shared\\ClickToRun\\",
+   "User": "NT AUTHORITY\\SYSTEM",
+   "LogonGuid": "{50a1b328-23ec-6202-e703-000000000000}",
+   "LogonId": "0x00000000000003e7",
+   "TerminalSessionId": "0",
+   "IntegrityLevel": "System",
+   "Hashes": "SHA1=83E9BEA0FB7D044B8DDCA891BAFC21B9F99B8E01,MD5=4228D6ACFD132009A3A1440A0B04810F,SHA256=32E4AA4EBD2B9EE9DC35D3F6247E06E700AF6EC668252ED9AEB43FBD36530845,IMPHASH=962DED2E727F180E5B6D49D6A8EBC365",
+   "ParentProcessGuid": "{50a1b328-5d44-6202-1105-000000000600}",
+   "ParentProcessId": "3084",
+   "ParentImage": "C:\\Program Files\\Common Files\\microsoft shared\\ClickToRun\\OfficeClickToRun.exe",
+   "ParentCommandLine": "\"C:\\Program Files\\Common Files\\Microsoft Shared\\ClickToRun\\OfficeClickToRun.exe\" /service",
+   "ParentUser": "NT AUTHORITY\\SYSTEM"
+  }
+ ]
+}

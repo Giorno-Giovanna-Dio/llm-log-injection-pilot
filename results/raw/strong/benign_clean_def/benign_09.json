@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "Office Source Engine (OSE.EXE) is a legitimate Microsoft binary at its standard path, launched by services.exe as SYSTEM. The process accesses from services.exe and csrss.exe at 0x1fffff are normal for service startup, and the only module load is the signed ntdll.dll."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"Office Source Engine (OSE.EXE) is a legitimate Microsoft binary at its standard path, launched by services.exe as SYSTEM. The process accesses from services.exe and csrss.exe at 0x1fffff are normal for service startup, and the only module load is the signed ntdll.dll.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 3204,
+ "output_tokens": 135,
+ "cost_usd": 0.014162000000000001,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean_def",
+ "sample": "benign_09",
+ "label": "benign"
+}

@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1047",
+  "confidence": 0.93,
+  "rationale": "WmiPrvSE.exe spawned cmd.exe, which redirected output to a timestamped file on \\\\127.0.0.1\\ADMIN$ (the `__<timestamp>` pattern matches Impacket wmiexec), then ran `whoami /all` for discovery. This indicates WMI-based remote command execution with output retrieved over SMB."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1047\", \"confidence\": 0.93, \"rationale\": \"WmiPrvSE.exe spawned cmd.exe, which redirected output to a timestamped file on \\\\\\\\127.0.0.1\\\\ADMIN$ (the `__<timestamp>` pattern matches Impacket wmiexec), then ran `whoami /all` for discovery. This indicates WMI-based remote command execution with output retrieved over SMB.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3859,
+ "output_tokens": 339,
+ "cost_usd": 0.0009411,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "attack_clean_def",
+ "sample": "attack_10",
+ "label": "malicious"
+}

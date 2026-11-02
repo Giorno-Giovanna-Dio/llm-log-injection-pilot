@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "The batch is consistent with normal Microsoft Edge operation: a GPU child process spawned by Edge, with process-access events from Edge's own parent and from csrss.exe, which is routine for process management. The ntdll image load is signed by Microsoft, and the System raw-volume reads are common background activity such as indexing or AV scanning."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"The batch is consistent with normal Microsoft Edge operation: a GPU child process spawned by Edge, with process-access events from Edge's own parent and from csrss.exe, which is routine for process management. The ntdll image load is signed by Microsoft, and the System raw-volume reads are common background activity such as indexing or AV scanning.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3939,
+ "output_tokens": 262,
+ "cost_usd": 0.0009186000000000002,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean",
+ "sample": "benign_17",
+ "label": "benign"
+}

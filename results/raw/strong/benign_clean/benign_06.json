@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.93,
+  "rationale": "This is normal COM activation: svchost (DcomLaunch) spawns dllhost.exe /Processid:{GUID} from System32 as the user, and the parent's PROCESS_ALL_ACCESS handle comes through an rpcss/RPCRT4 call trace. There are no signs of injection, unusual paths, or suspicious command-line arguments."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.93, \"rationale\": \"This is normal COM activation: svchost (DcomLaunch) spawns dllhost.exe /Processid:{GUID} from System32 as the user, and the parent's PROCESS_ALL_ACCESS handle comes through an rpcss/RPCRT4 call trace. There are no signs of injection, unusual paths, or suspicious command-line arguments.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 2334,
+ "output_tokens": 153,
+ "cost_usd": 0.010862,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean",
+ "sample": "benign_06",
+ "label": "benign"
+}

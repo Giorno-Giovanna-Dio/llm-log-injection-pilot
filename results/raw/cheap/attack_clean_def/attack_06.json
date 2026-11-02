@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1218.010",
+  "confidence": 0.95,
+  "rationale": "A file named jabber.exe in C:\\ProgramData is run with /u /s /i:<pastebin URL> and a .dll argument, which matches regsvr32-style proxy execution (Register Server, /i to fetch a remote scriptlet) that pulls remote content and runs it under a signed Microsoft binary, spawned from cmd.exe. The binary name is masquerading, and the invocation is consistent with a remote payload delivery and execution chain."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1218.010\", \"confidence\": 0.95, \"rationale\": \"A file named jabber.exe in C:\\\\ProgramData is run with /u /s /i:<pastebin URL> and a .dll argument, which matches regsvr32-style proxy execution (Register Server, /i to fetch a remote scriptlet) that pulls remote content and runs it under a signed Microsoft binary, spawned from cmd.exe. The binary name is masquerading, and the invocation is consistent with a remote payload delivery and execution chain.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2032,
+ "output_tokens": 189,
+ "cost_usd": 0.0005007000000000001,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "attack_clean_def",
+ "sample": "attack_06",
+ "label": "malicious"
+}

@@ -1,0 +1,26 @@
+{
+ "flagged": true,
+ "alerts": [
+  {
+   "rule": "Proc Access",
+   "level": "low"
+  },
+  {
+   "rule": "Proc Access",
+   "level": "low"
+  },
+  {
+   "rule": "File Created",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  }
+ ],
+ "cost_usd": 0.0,
+ "system": "hayabusa",
+ "condition": "benign_clean",
+ "sample": "benign_02",
+ "label": "benign"
+}

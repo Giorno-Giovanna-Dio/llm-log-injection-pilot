@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1546.003",
+  "confidence": 0.97,
+  "rationale": "WinPwnage (UAC bypass/elevate technique 5) created a WMI event subscription (filter, CommandLineEventConsumer BotConsumer23, and binding) via WMIC, which resulted in WmiPrvSE spawning cmd.exe as SYSTEM, followed by cleanup of the subscription. Python also opened handles to lsass.exe and winlogon.exe, consistent with privilege escalation tooling."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1546.003\", \"confidence\": 0.97, \"rationale\": \"WinPwnage (UAC bypass/elevate technique 5) created a WMI event subscription (filter, CommandLineEventConsumer BotConsumer23, and binding) via WMIC, which resulted in WmiPrvSE spawning cmd.exe as SYSTEM, followed by cleanup of the subscription. Python also opened handles to lsass.exe and winlogon.exe, consistent with privilege escalation tooling.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 7772,
+ "output_tokens": 184,
+ "cost_usd": 0.032924,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "attack_clean",
+ "sample": "attack_16",
+ "label": "malicious"
+}

@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.95,
+  "rationale": "AppVShNotify.exe is a legitimate Microsoft binary running from its standard ClickToRun path, spawned by OfficeClickToRun.exe /service as SYSTEM. This is normal Office update/virtualization behavior with no suspicious arguments or anomalies."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.95, \"rationale\": \"AppVShNotify.exe is a legitimate Microsoft binary running from its standard ClickToRun path, spawned by OfficeClickToRun.exe /service as SYSTEM. This is normal Office update/virtualization behavior with no suspicious arguments or anomalies.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 1554,
+ "output_tokens": 127,
+ "cost_usd": 0.007482,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean",
+ "sample": "benign_12",
+ "label": "benign"
+}

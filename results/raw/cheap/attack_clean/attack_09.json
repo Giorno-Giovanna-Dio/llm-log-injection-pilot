@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "All four events are routine Windows service-host and command-processor process creations with expected parents (services.exe, svchost.exe DcomLaunch), standard Microsoft signatures, and normal service groups (netsvcs, LocalService, wcncsvc, fdPHost). No suspicious command lines, unusual parents, encoded arguments, or network/credential activity appear in this batch."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"All four events are routine Windows service-host and command-processor process creations with expected parents (services.exe, svchost.exe DcomLaunch), standard Microsoft signatures, and normal service groups (netsvcs, LocalService, wcncsvc, fdPHost). No suspicious command lines, unusual parents, encoded arguments, or network/credential activity appear in this batch.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2762,
+ "output_tokens": 158,
+ "cost_usd": 0.0006312,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "attack_clean",
+ "sample": "attack_09",
+ "label": "malicious"
+}

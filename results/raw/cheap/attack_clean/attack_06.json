@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1218.010",
+  "confidence": 0.95,
+  "rationale": "A binary named jabber.exe in C:\\ProgramData carries the 'Microsoft(C) Register Server' description and is run with regsvr32-style switches (/u /s /i:URL) to fetch remote content from pastebin.com, which indicates regsvr32 proxy execution with masquerading. It was spawned by cmd.exe, and the cmd.exe child is consistent with follow-on activity."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1218.010\", \"confidence\": 0.95, \"rationale\": \"A binary named jabber.exe in C:\\\\ProgramData carries the 'Microsoft(C) Register Server' description and is run with regsvr32-style switches (/u /s /i:URL) to fetch remote content from pastebin.com, which indicates regsvr32 proxy execution with masquerading. It was spawned by cmd.exe, and the cmd.exe child is consistent with follow-on activity.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 1865,
+ "output_tokens": 381,
+ "cost_usd": 0.0005633000000000001,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "attack_clean",
+ "sample": "attack_06",
+ "label": "malicious"
+}

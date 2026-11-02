@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1059.003",
+  "confidence": 0.8,
+  "rationale": "sqlservr.exe spawned cmd.exe under a service account, which is a typical xp_cmdshell execution pattern. The command dumps environment variables to a file in a public directory, consistent with attacker reconnaissance and staging, though it could be a benign admin script."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1059.003\", \"confidence\": 0.8, \"rationale\": \"sqlservr.exe spawned cmd.exe under a service account, which is a typical xp_cmdshell execution pattern. The command dumps environment variables to a file in a public directory, consistent with attacker reconnaissance and staging, though it could be a benign admin script.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 1676,
+ "output_tokens": 538,
+ "cost_usd": 0.0006039999999999999,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "attack_clean_def",
+ "sample": "attack_12",
+ "label": "malicious"
+}

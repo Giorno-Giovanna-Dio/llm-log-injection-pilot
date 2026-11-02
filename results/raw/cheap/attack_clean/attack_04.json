@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1090.001",
+  "confidence": 0.9,
+  "rationale": "A cmd.exe session spawned netsh to create a PortProxy rule forwarding 1.2.3.4:8001 to 1.2.3.5:3389 (RDP), and Sysmon Event 13 confirms the rule was written to the PortProxy registry key. This sets up an unauthorized internal port forward that can tunnel RDP access through the host, which is not typical administrative activity."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1090.001\", \"confidence\": 0.9, \"rationale\": \"A cmd.exe session spawned netsh to create a PortProxy rule forwarding 1.2.3.4:8001 to 1.2.3.5:3389 (RDP), and Sysmon Event 13 confirms the rule was written to the PortProxy registry key. This sets up an unauthorized internal port forward that can tunnel RDP access through the host, which is not typical administrative activity.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2006,
+ "output_tokens": 385,
+ "cost_usd": 0.0005935000000000001,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "attack_clean",
+ "sample": "attack_04",
+ "label": "malicious"
+}

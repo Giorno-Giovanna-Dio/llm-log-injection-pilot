@@ -1,0 +1,26 @@
+{
+ "flagged": true,
+ "alerts": [
+  {
+   "rule": "Proc Access",
+   "level": "low"
+  },
+  {
+   "rule": "Proc Access",
+   "level": "low"
+  },
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "Non Interactive PowerShell Process Spawned",
+   "level": "low"
+  }
+ ],
+ "cost_usd": 0.0,
+ "system": "hayabusa",
+ "condition": "benign_clean",
+ "sample": "benign_08",
+ "label": "benign"
+}

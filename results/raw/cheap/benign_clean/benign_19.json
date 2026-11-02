@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "backgroundTaskHost.exe is a validly signed Microsoft binary at its expected System32 path, launched by svchost (DcomLaunch) during normal COM/DCOM activation, and the full-access handles from svchost and csrss match standard process creation and lifecycle behavior. The loaded DLLs are all signed Microsoft components with no unusual injection indicators."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"backgroundTaskHost.exe is a validly signed Microsoft binary at its expected System32 path, launched by svchost (DcomLaunch) during normal COM/DCOM activation, and the full-access handles from svchost and csrss match standard process creation and lifecycle behavior. The loaded DLLs are all signed Microsoft components with no unusual injection indicators.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 6074,
+ "output_tokens": 382,
+ "cost_usd": 0.0014056000000000001,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean",
+ "sample": "benign_19",
+ "label": "benign"
+}

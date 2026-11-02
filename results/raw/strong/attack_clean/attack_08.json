@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1220",
+  "confidence": 0.93,
+  "rationale": "msxsl.exe was run from a VirtualBox share (\\\\vboxsrv\\HTools) with the same file (test.dat in an Adobe AppData folder) as both XML and XSL input, which is the classic XSL script processing proxy-execution pattern. It loaded msxml3.dll and spawned an interactive cmd.exe at High integrity, indicating script-driven code execution."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1220\", \"confidence\": 0.93, \"rationale\": \"msxsl.exe was run from a VirtualBox share (\\\\\\\\vboxsrv\\\\HTools) with the same file (test.dat in an Adobe AppData folder) as both XML and XSL input, which is the classic XSL script processing proxy-execution pattern. It loaded msxml3.dll and spawned an interactive cmd.exe at High integrity, indicating script-driven code execution.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 2130,
+ "output_tokens": 167,
+ "cost_usd": 0.010186,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "attack_clean",
+ "sample": "attack_08",
+ "label": "malicious"
+}

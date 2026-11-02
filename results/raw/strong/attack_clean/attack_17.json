@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1548.002",
+  "confidence": 0.97,
+  "rationale": "PowerShell hijacked the HKCU mscfile\\shell\\open\\command default value, then launched eventvwr.exe, which spawned a High-integrity powershell.exe from a Medium-integrity parent. This is the classic eventvwr.exe UAC bypass via registry hijack."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1548.002\", \"confidence\": 0.97, \"rationale\": \"PowerShell hijacked the HKCU mscfile\\\\shell\\\\open\\\\command default value, then launched eventvwr.exe, which spawned a High-integrity powershell.exe from a Medium-integrity parent. This is the classic eventvwr.exe UAC bypass via registry hijack.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 3568,
+ "output_tokens": 137,
+ "cost_usd": 0.015638,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "attack_clean",
+ "sample": "attack_17",
+ "label": "malicious"
+}

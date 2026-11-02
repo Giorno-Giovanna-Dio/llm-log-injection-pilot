@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "SearchIndexer.exe launched by services.exe from System32 with the standard /Embedding argument, and it loads only signed Microsoft DLLs. The 0x1fffff process access from services.exe and csrss.exe during process creation is normal, and the call traces are legitimate RPC and CSRSS paths. Nothing suggests injection or abuse."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"SearchIndexer.exe launched by services.exe from System32 with the standard /Embedding argument, and it loads only signed Microsoft DLLs. The 0x1fffff process access from services.exe and csrss.exe during process creation is normal, and the call traces are legitimate RPC and CSRSS paths. Nothing suggests injection or abuse.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 6724,
+ "output_tokens": 151,
+ "cost_usd": 0.028402,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean_def",
+ "sample": "benign_16",
+ "label": "benign"
+}

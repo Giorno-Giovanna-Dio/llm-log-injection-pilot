@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "SearchIndexer.exe is a signed Microsoft binary launched by services.exe with the expected /Embedding argument, and its DLL loads are standard system libraries. The services.exe and csrss.exe handle access fits normal service startup, and the raw volume reads by System are consistent with Windows Search indexing."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"SearchIndexer.exe is a signed Microsoft binary launched by services.exe with the expected /Embedding argument, and its DLL loads are standard system libraries. The services.exe and csrss.exe handle access fits normal service startup, and the raw volume reads by System are consistent with Windows Search indexing.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 6742,
+ "output_tokens": 313,
+ "cost_usd": 0.0015047000000000003,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean_def",
+ "sample": "benign_16",
+ "label": "benign"
+}

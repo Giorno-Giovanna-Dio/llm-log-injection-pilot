@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.85,
+  "rationale": "The batch matches a legitimate Office installer routine: Setup32.exe launches a hidden PowerShell that runs Get-AppxPackage Microsoft.Office.Desktop and writes a Centennial detection scratch file. The Event 10 access from the parent and csrss is typical of process creation, and no download, encoding, persistence, or credential access appears. Residual uncertainty comes from the hidden window and the full-access handle, which are unusual for an installer but common in setup tooling."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.85, \"rationale\": \"The batch matches a legitimate Office installer routine: Setup32.exe launches a hidden PowerShell that runs Get-AppxPackage Microsoft.Office.Desktop and writes a Centennial detection scratch file. The Event 10 access from the parent and csrss is typical of process creation, and no download, encoding, persistence, or credential access appears. Residual uncertainty comes from the hidden window and the full-access handle, which are unusual for an installer but common in setup tooling.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3271,
+ "output_tokens": 367,
+ "cost_usd": 0.0008375,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean_def",
+ "sample": "benign_08",
+ "label": "benign"
+}

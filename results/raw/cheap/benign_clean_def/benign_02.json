@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "The events show standard Windows COM activation: svchost (DcomLaunch) starts a COM Surrogate dllhost.exe with the /Processid switch, csrss and svchost open handles to it as part of normal process setup, and msiexec writes an Evernote image file as SYSTEM, which fits a routine installer or repair. Nothing here shows injection, credential access, or suspicious execution."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"The events show standard Windows COM activation: svchost (DcomLaunch) starts a COM Surrogate dllhost.exe with the /Processid switch, csrss and svchost open handles to it as part of normal process setup, and msiexec writes an Evernote image file as SYSTEM, which fits a routine installer or repair. Nothing here shows injection, credential access, or suspicious execution.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3033,
+ "output_tokens": 358,
+ "cost_usd": 0.0007854,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean_def",
+ "sample": "benign_02",
+ "label": "benign"
+}

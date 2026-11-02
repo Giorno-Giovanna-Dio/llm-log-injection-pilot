@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "The events show a normal COM Surrogate (dllhost.exe) launch from svchost DcomLaunch, the expected csrss and svchost handle access to it, and an msiexec write to an Evernote application image file. Nothing here indicates injection, credential access, or other malicious behavior."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"The events show a normal COM Surrogate (dllhost.exe) launch from svchost DcomLaunch, the expected csrss and svchost handle access to it, and an msiexec write to an Evernote application image file. Nothing here indicates injection, credential access, or other malicious behavior.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2896,
+ "output_tokens": 296,
+ "cost_usd": 0.000727,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean",
+ "sample": "benign_02",
+ "label": "benign"
+}

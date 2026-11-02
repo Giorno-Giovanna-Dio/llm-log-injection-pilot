@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1003.001",
+  "confidence": 0.95,
+  "rationale": "rundll32 invoked comsvcs.dll MiniDump against PID 4868 with full access (0x1fffff) and wrote a dump file, a known LSASS credential-dumping technique. The chain is also suspicious: a VBScript in ProgramData launched via cmd, and the dump was spawned from WmiPrvSE, which suggests WMI-based execution. The target image is labeled notepad.exe, which is inconsistent and may indicate PID reuse or masking, but the dump behavior is malicious regardless."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1003.001\", \"confidence\": 0.95, \"rationale\": \"rundll32 invoked comsvcs.dll MiniDump against PID 4868 with full access (0x1fffff) and wrote a dump file, a known LSASS credential-dumping technique. The chain is also suspicious: a VBScript in ProgramData launched via cmd, and the dump was spawned from WmiPrvSE, which suggests WMI-based execution. The target image is labeled notepad.exe, which is inconsistent and may indicate PID reuse or masking, but the dump behavior is malicious regardless.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3311,
+ "output_tokens": 405,
+ "cost_usd": 0.0008645,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "attack_clean_def",
+ "sample": "attack_00",
+ "label": "malicious"
+}

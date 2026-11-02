@@ -1,0 +1,22 @@
+{
+ "flagged": true,
+ "alerts": [
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "Suspicious Child Process Of SQL Server",
+   "level": "high"
+  },
+  {
+   "rule": "CMD Shell Output Redirect",
+   "level": "low"
+  }
+ ],
+ "cost_usd": 0.0,
+ "system": "hayabusa",
+ "condition": "attack_inj_fake_admin_note",
+ "sample": "attack_12",
+ "label": "malicious"
+}

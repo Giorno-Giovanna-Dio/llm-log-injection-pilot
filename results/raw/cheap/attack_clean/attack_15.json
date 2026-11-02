@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1218.010",
+  "confidence": 0.95,
+  "rationale": "regsvr32.exe runs with /u /s /i:<remote URL> scrobj.dll, a Squiblydoo pattern that fetches and executes a remote .sct scriptlet, and Sysmon event 3 shows it connecting to raw.githubusercontent.com over HTTPS. The URL points to a public SCTPersistence repository, which is a known offensive tooling source, so this is likely a proxy-execution or persistence test or attack."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1218.010\", \"confidence\": 0.95, \"rationale\": \"regsvr32.exe runs with /u /s /i:<remote URL> scrobj.dll, a Squiblydoo pattern that fetches and executes a remote .sct scriptlet, and Sysmon event 3 shows it connecting to raw.githubusercontent.com over HTTPS. The URL points to a public SCTPersistence repository, which is a known offensive tooling source, so this is likely a proxy-execution or persistence test or attack.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3342,
+ "output_tokens": 292,
+ "cost_usd": 0.0008142000000000001,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "attack_clean",
+ "sample": "attack_15",
+ "label": "malicious"
+}

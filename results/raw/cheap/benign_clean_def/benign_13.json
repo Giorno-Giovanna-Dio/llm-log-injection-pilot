@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.95,
+  "rationale": "The batch shows the signed Microsoft Office Click-to-Run service (OfficeClickToRun.exe, running as SYSTEM) launching its own signed Integrator.exe for a standard MSI install/update with the expected PackageRoot under Program Files. The full-access handle opens from OfficeClickToRun and csrss are typical of normal process management during that update, and no suspicious behavior appears."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.95, \"rationale\": \"The batch shows the signed Microsoft Office Click-to-Run service (OfficeClickToRun.exe, running as SYSTEM) launching its own signed Integrator.exe for a standard MSI install/update with the expected PackageRoot under Program Files. The full-access handle opens from OfficeClickToRun and csrss are typical of normal process management during that update, and no suspicious behavior appears.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3535,
+ "output_tokens": 264,
+ "cost_usd": 0.0008388,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean_def",
+ "sample": "benign_13",
+ "label": "benign"
+}

@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.85,
+  "rationale": "This is the standard Microsoft Office Setup32.exe installer launching PowerShell to check for Centennial Office via Get-AppxPackage and writing a scratch file in Temp. The parent process access (0x1fffff) from the launcher and csrss.exe is normal process-creation behavior, with no injection, download, or persistence indicators."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.85, \"rationale\": \"This is the standard Microsoft Office Setup32.exe installer launching PowerShell to check for Centennial Office via Get-AppxPackage and writing a scratch file in Temp. The parent process access (0x1fffff) from the launcher and csrss.exe is normal process-creation behavior, with no injection, download, or persistence indicators.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 3257,
+ "output_tokens": 146,
+ "cost_usd": 0.014484,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean_def",
+ "sample": "benign_08",
+ "label": "benign"
+}

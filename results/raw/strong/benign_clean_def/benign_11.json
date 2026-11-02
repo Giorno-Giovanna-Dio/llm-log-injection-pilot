@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.93,
+  "rationale": "OfficeClickToRun.exe (SYSTEM service) launched its own Integrator.exe from the standard Office paths with normal Click-to-Run arguments, wrote CTR virtualized registry keys, and opened the child with full access, which is typical parent-child behavior for the updater. No suspicious paths, command lines, or injection indicators."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.93, \"rationale\": \"OfficeClickToRun.exe (SYSTEM service) launched its own Integrator.exe from the standard Office paths with normal Click-to-Run arguments, wrote CTR virtualized registry keys, and opened the child with full access, which is typical parent-child behavior for the updater. No suspicious paths, command lines, or injection indicators.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 3040,
+ "output_tokens": 148,
+ "cost_usd": 0.013635999999999999,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean_def",
+ "sample": "benign_11",
+ "label": "benign"
+}

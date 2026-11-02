@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1053.005",
+  "confidence": 0.6,
+  "rationale": "SYSTEM-context 32-bit schtasks.exe (SysWOW64) force-deleted the scheduled task 'Microsoft\\Office\\OfficeBackgroundTaskHandlerLogon', consistent with scheduled-task manipulation or cleanup of a persistence/masquerading task. The conhost and volume-mount events are benign, and Office updaters can remove this task legitimately, so confidence is moderate."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1053.005\", \"confidence\": 0.6, \"rationale\": \"SYSTEM-context 32-bit schtasks.exe (SysWOW64) force-deleted the scheduled task 'Microsoft\\\\Office\\\\OfficeBackgroundTaskHandlerLogon', consistent with scheduled-task manipulation or cleanup of a persistence/masquerading task. The conhost and volume-mount events are benign, and Office updaters can remove this task legitimately, so confidence is moderate.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 2479,
+ "output_tokens": 183,
+ "cost_usd": 0.011742,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean",
+ "sample": "benign_15",
+ "label": "benign"
+}

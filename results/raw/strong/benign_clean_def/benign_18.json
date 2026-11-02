@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "Pidgin was launched normally by explorer.exe from its install path with a standard command line. The process access events come from explorer (the launcher's normal handle on its child), csrss (process creation), and system services (psmserviceexthost, pcasvc) with benign call traces and access masks. No injection or credential access is evident."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"Pidgin was launched normally by explorer.exe from its install path with a standard command line. The process access events come from explorer (the launcher's normal handle on its child), csrss (process creation), and system services (psmserviceexthost, pcasvc) with benign call traces and access masks. No injection or credential access is evident.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 4729,
+ "output_tokens": 135,
+ "cost_usd": 0.020262000000000002,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean_def",
+ "sample": "benign_18",
+ "label": "benign"
+}

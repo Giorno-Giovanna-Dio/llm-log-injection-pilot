@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.93,
+  "rationale": "This is normal launch of backgroundTaskHost.exe (ContentDeliveryManager) by svchost DcomLaunch, with the process access from svchost and csrss being routine for process creation, and only validly signed Microsoft DLLs loaded. No suspicious command line, unsigned modules, or injection indicators."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.93, \"rationale\": \"This is normal launch of backgroundTaskHost.exe (ContentDeliveryManager) by svchost DcomLaunch, with the process access from svchost and csrss being routine for process creation, and only validly signed Microsoft DLLs loaded. No suspicious command line, unsigned modules, or injection indicators.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 6189,
+ "output_tokens": 139,
+ "cost_usd": 0.026142,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean_def",
+ "sample": "benign_19",
+ "label": "benign"
+}

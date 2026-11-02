@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "SearchIndexer.exe is launched normally by services.exe with the standard /Embedding argument, and its images are validly Microsoft-signed. The full-access handles from services.exe and csrss.exe are routine process-creation and service-control behavior, and the raw volume reads are attributed to the System process, which is common for Windows background services."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"SearchIndexer.exe is launched normally by services.exe with the standard /Embedding argument, and its images are validly Microsoft-signed. The full-access handles from services.exe and csrss.exe are routine process-creation and service-control behavior, and the raw volume reads are attributed to the System process, which is common for Windows background services.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 6608,
+ "output_tokens": 317,
+ "cost_usd": 0.0014799000000000001,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean",
+ "sample": "benign_16",
+ "label": "benign"
+}

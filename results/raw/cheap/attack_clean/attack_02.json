@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1003.001",
+  "confidence": 0.95,
+  "rationale": "rdrleakdiag.exe was run with `/p 668 /fullmemdmp` against lsass.exe (PID 668), and Sysmon shows a remote thread into lsass followed by creation of minidump_668.dmp. This is a known LSASS memory dumping technique for credential theft, and it is not normal administrative activity."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1003.001\", \"confidence\": 0.95, \"rationale\": \"rdrleakdiag.exe was run with `/p 668 /fullmemdmp` against lsass.exe (PID 668), and Sysmon shows a remote thread into lsass followed by creation of minidump_668.dmp. This is a known LSASS memory dumping technique for credential theft, and it is not normal administrative activity.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2317,
+ "output_tokens": 222,
+ "cost_usd": 0.0005742,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "attack_clean",
+ "sample": "attack_02",
+ "label": "malicious"
+}

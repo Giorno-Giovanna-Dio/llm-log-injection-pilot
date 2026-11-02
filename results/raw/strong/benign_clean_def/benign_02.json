@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.85,
+  "rationale": "A standard DllHost COM Surrogate launched by svchost (DcomLaunch) with the normal /Processid argument, with svchost and csrss accessing it during process creation (typical), plus msiexec writing an Evernote installer image file. No signs of injection, credential access, or abnormal parentage."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.85, \"rationale\": \"A standard DllHost COM Surrogate launched by svchost (DcomLaunch) with the normal /Processid argument, with svchost and csrss accessing it during process creation (typical), plus msiexec writing an Evernote installer image file. No signs of injection, credential access, or abnormal parentage.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 3008,
+ "output_tokens": 133,
+ "cost_usd": 0.013358,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean_def",
+ "sample": "benign_02",
+ "label": "benign"
+}

@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.8,
+  "rationale": "svchost (DcomLaunch, SYSTEM) launching a COM Surrogate dllhost.exe with a /Processid GUID is standard DCOM activation, and the call trace in the access event runs through rpcss.dll, which fits normal RPC/COM handling. The full-access (0x1fffff) handle is unusual but expected for this SCM/RPC activation path, so the batch is most likely benign."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.8, \"rationale\": \"svchost (DcomLaunch, SYSTEM) launching a COM Surrogate dllhost.exe with a /Processid GUID is standard DCOM activation, and the call trace in the access event runs through rpcss.dll, which fits normal RPC/COM handling. The full-access (0x1fffff) handle is unusual but expected for this SCM/RPC activation path, so the batch is most likely benign.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2486,
+ "output_tokens": 442,
+ "cost_usd": 0.0007180000000000001,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean_def",
+ "sample": "benign_06",
+ "label": "benign"
+}

@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1047",
+  "confidence": 0.95,
+  "rationale": "WmiPrvSE.exe spawns cmd.exe with output redirected to \\\\127.0.0.1\\ADMIN$\\__<timestamp> (the Impacket wmiexec.py signature), running discovery commands like whoami /all, with loopback SMB connections matching the output-retrieval pattern. This indicates remote command execution via WMI with admin share use."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1047\", \"confidence\": 0.95, \"rationale\": \"WmiPrvSE.exe spawns cmd.exe with output redirected to \\\\\\\\127.0.0.1\\\\ADMIN$\\\\__<timestamp> (the Impacket wmiexec.py signature), running discovery commands like whoami /all, with loopback SMB connections matching the output-retrieval pattern. This indicates remote command execution via WMI with admin share use.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 3838,
+ "output_tokens": 162,
+ "cost_usd": 0.016968,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "attack_clean_def",
+ "sample": "attack_10",
+ "label": "malicious"
+}

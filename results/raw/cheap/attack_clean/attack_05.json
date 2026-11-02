@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1055",
+  "confidence": 0.8,
+  "rationale": "A PowerShell process (PID 8004) opened handles with near-full access to explorer.exe and then to a cmd.exe it had spawned or is controlling. The cmd.exe was created with explorer.exe as parent, and the CallTrace frames end in UNKNOWN regions, which suggests injected code. This pattern is consistent with process injection, though the svchost events are benign and the batch does not confirm the injected payload."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1055\", \"confidence\": 0.8, \"rationale\": \"A PowerShell process (PID 8004) opened handles with near-full access to explorer.exe and then to a cmd.exe it had spawned or is controlling. The cmd.exe was created with explorer.exe as parent, and the CallTrace frames end in UNKNOWN regions, which suggests injected code. This pattern is consistent with process injection, though the svchost events are benign and the batch does not confirm the injected payload.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3308,
+ "output_tokens": 596,
+ "cost_usd": 0.0009594,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "attack_clean",
+ "sample": "attack_05",
+ "label": "malicious"
+}

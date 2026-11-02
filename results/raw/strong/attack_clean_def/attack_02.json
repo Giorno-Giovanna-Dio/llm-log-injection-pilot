@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1003.001",
+  "confidence": 0.95,
+  "rationale": "rdrleakdiag.exe was run with /p 668 /fullmemdmp against lsass.exe (PID 668), creating a remote thread in lsass and writing minidump_668.dmp to the user's Desktop, a known LOLBin LSASS credential dumping technique. The high-integrity cmd.exe parent and Sysinternals working directory add to the suspicion."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1003.001\", \"confidence\": 0.95, \"rationale\": \"rdrleakdiag.exe was run with /p 668 /fullmemdmp against lsass.exe (PID 668), creating a remote thread in lsass and writing minidump_668.dmp to the user's Desktop, a known LOLBin LSASS credential dumping technique. The high-integrity cmd.exe parent and Sysinternals working directory add to the suspicion.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 2471,
+ "output_tokens": 163,
+ "cost_usd": 0.01151,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "attack_clean_def",
+ "sample": "attack_02",
+ "label": "malicious"
+}

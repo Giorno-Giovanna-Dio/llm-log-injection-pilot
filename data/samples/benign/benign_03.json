@@ -1,0 +1,39 @@
+{
+ "id": "benign_03",
+ "label": "benign",
+ "source": "win10-client sysmon chunk 2326",
+ "tactic": "",
+ "technique_id": "",
+ "events": [
+  {
+   "EventID": 1,
+   "Channel": "Microsoft-Windows-Sysmon/Operational",
+   "Computer": "DESKTOP-A8CALR3",
+   "TimeCreated": "2022-02-08 11:54:56.631348+00:00",
+   "Provider": "Microsoft-Windows-Sysmon",
+   "RuleName": "-",
+   "UtcTime": "2022-02-08 11:54:56.619",
+   "ProcessGuid": "{50a1b328-5a10-6202-ba02-000000000600}",
+   "ProcessId": "3132",
+   "Image": "C:\\Program Files (x86)\\Google\\Update\\1.3.36.122\\GoogleCrashHandler.exe",
+   "FileVersion": "1.3.36.121",
+   "Description": "Google Crash Handler",
+   "Product": "Google Update",
+   "Company": "Google LLC",
+   "OriginalFileName": "GoogleUpdate.exe",
+   "CommandLine": "\"C:\\Program Files (x86)\\Google\\Update\\1.3.36.122\\GoogleCrashHandler.exe\"",
+   "CurrentDirectory": "C:\\Program Files (x86)\\Google\\Update\\1.3.36.122\\",
+   "User": "NT AUTHORITY\\SYSTEM",
+   "LogonGuid": "{50a1b328-23ec-6202-e703-000000000000}",
+   "LogonId": "0x00000000000003e7",
+   "TerminalSessionId": "0",
+   "IntegrityLevel": "System",
+   "Hashes": "SHA1=95D68A6A541FEE6ACE5B7481C35D154CEC57C728,MD5=497B4CC61EE544D71B391CEBE3A72B87,SHA256=A61FA37D4E2F6A350616755344EA31F6E4074353FC1740CFABF8E42C00A109F4,IMPHASH=F58E804F0ADFA69CF1C6ED6983DB4836",
+   "ParentProcessGuid": "{50a1b328-5a10-6202-b802-000000000600}",
+   "ParentProcessId": "3496",
+   "ParentImage": "C:\\Program Files (x86)\\Google\\Update\\GoogleUpdate.exe",
+   "ParentCommandLine": "\"C:\\Program Files (x86)\\Google\\Update\\GoogleUpdate.exe\" /c",
+   "ParentUser": "NT AUTHORITY\\SYSTEM"
+  }
+ ]
+}

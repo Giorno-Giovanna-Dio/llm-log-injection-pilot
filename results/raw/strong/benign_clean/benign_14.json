@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "This is the normal Office Click-to-Run Integrator.exe behavior: SYSTEM-run integrator.exe from the Office install path spawns schtasks.exe to delete a legitimate Office background task during install/update. The full-access process handle events come from the parent and csrss.exe, which is expected for child process creation, and there are no signs of persistence creation or masquerading."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"This is the normal Office Click-to-Run Integrator.exe behavior: SYSTEM-run integrator.exe from the Office install path spawns schtasks.exe to delete a legitimate Office background task during install/update. The full-access process handle events come from the parent and csrss.exe, which is expected for child process creation, and there are no signs of persistence creation or masquerading.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 3075,
+ "output_tokens": 156,
+ "cost_usd": 0.013856,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean",
+ "sample": "benign_14",
+ "label": "benign"
+}

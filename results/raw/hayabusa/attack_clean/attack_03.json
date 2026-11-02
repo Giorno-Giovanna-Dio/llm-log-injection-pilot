@@ -1,0 +1,18 @@
+{
+ "flagged": true,
+ "alerts": [
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "Hiding Files with Attrib.exe",
+   "level": "med"
+  }
+ ],
+ "cost_usd": 0.0,
+ "system": "hayabusa",
+ "condition": "attack_clean",
+ "sample": "attack_03",
+ "label": "malicious"
+}

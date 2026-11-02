@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.4,
+  "rationale": "WinRM remote shell (winrshost.exe) running a single 'ipconfig' as the Administrator account is consistent with routine remote administration, though it could also be early discovery after remote access, so the WinRM session origin should be verified."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.4, \"rationale\": \"WinRM remote shell (winrshost.exe) running a single 'ipconfig' as the Administrator account is consistent with routine remote administration, though it could also be early discovery after remote access, so the WinRM session origin should be verified.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2242,
+ "output_tokens": 422,
+ "cost_usd": 0.0006592,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "attack_clean",
+ "sample": "attack_11",
+ "label": "malicious"
+}

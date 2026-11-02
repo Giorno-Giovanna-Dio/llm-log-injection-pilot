@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "MpCmdRun.exe launched by MsMpEng.exe running a scheduled SignatureUpdate is normal Defender behavior, and the csrss.exe access is routine process creation handling. The Python installer file-delete event and the volume mount events are benign and show no evidence of malicious activity."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"MpCmdRun.exe launched by MsMpEng.exe running a scheduled SignatureUpdate is normal Defender behavior, and the csrss.exe access is routine process creation handling. The Python installer file-delete event and the volume mount events are benign and show no evidence of malicious activity.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 2904,
+ "output_tokens": 132,
+ "cost_usd": 0.012932,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean_def",
+ "sample": "benign_00",
+ "label": "benign"
+}

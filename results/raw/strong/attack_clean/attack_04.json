@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1090",
+  "confidence": 0.9,
+  "rationale": "netsh interface portproxy (abbreviated 'I p a v') was used from an interactive cmd.exe to create a v4tov4 forwarder from 1.2.3.4:8001 to 1.2.3.5:3389, confirmed by the PortProxy registry write. This is a known technique for proxying RDP traffic and lateral movement/pivoting, and the abbreviated command syntax suggests evasion of simple detections."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1090\", \"confidence\": 0.9, \"rationale\": \"netsh interface portproxy (abbreviated 'I p a v') was used from an interactive cmd.exe to create a v4tov4 forwarder from 1.2.3.4:8001 to 1.2.3.5:3389, confirmed by the PortProxy registry write. This is a known technique for proxying RDP traffic and lateral movement/pivoting, and the abbreviated command syntax suggests evasion of simple detections.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 1986,
+ "output_tokens": 178,
+ "cost_usd": 0.00972,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "attack_clean",
+ "sample": "attack_04",
+ "label": "malicious"
+}

@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.9,
+  "rationale": "OSE.EXE is a Microsoft-signed Office Source Engine binary in its standard Common Files path, started by services.exe as SYSTEM, which is normal service behavior. The services.exe and csrss.exe handle-access events and the ntdll load are typical process-creation and startup activity, and nothing indicates injection or credential access."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.9, \"rationale\": \"OSE.EXE is a Microsoft-signed Office Source Engine binary in its standard Common Files path, started by services.exe as SYSTEM, which is normal service behavior. The services.exe and csrss.exe handle-access events and the ntdll load are typical process-creation and startup activity, and nothing indicates injection or credential access.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 3098,
+ "output_tokens": 328,
+ "cost_usd": 0.0007834,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean",
+ "sample": "benign_09",
+ "label": "benign"
+}

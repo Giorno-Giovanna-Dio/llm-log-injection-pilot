@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1090.001",
+  "confidence": 0.9,
+  "rationale": "A high-integrity cmd.exe launched netsh using abbreviated interface portproxy syntax (I p a v), and Sysmon recorded a PortProxy v4tov4 registry value forwarding 1.2.3.4:8001 to 1.2.3.5:3389. This is a port-forwarding setup for RDP tunneling or lateral movement, and the abbreviated syntax suggests an attempt to evade detection."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1090.001\", \"confidence\": 0.9, \"rationale\": \"A high-integrity cmd.exe launched netsh using abbreviated interface portproxy syntax (I p a v), and Sysmon recorded a PortProxy v4tov4 registry value forwarding 1.2.3.4:8001 to 1.2.3.5:3389. This is a port-forwarding setup for RDP tunneling or lateral movement, and the abbreviated syntax suggests an attempt to evade detection.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 2159,
+ "output_tokens": 180,
+ "cost_usd": 0.010432,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "attack_clean_def",
+ "sample": "attack_04",
+ "label": "malicious"
+}

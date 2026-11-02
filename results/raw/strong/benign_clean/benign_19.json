@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.95,
+  "rationale": "This is normal launch of backgroundTaskHost.exe (ContentDeliveryManager) by svchost DcomLaunch. The 0x1fffff process access comes from svchost and csrss during process creation, and all loaded DLLs are Microsoft-signed system libraries with valid signatures."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.95, \"rationale\": \"This is normal launch of backgroundTaskHost.exe (ContentDeliveryManager) by svchost DcomLaunch. The 0x1fffff process access comes from svchost and csrss during process creation, and all loaded DLLs are Microsoft-signed system libraries with valid signatures.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 6057,
+ "output_tokens": 132,
+ "cost_usd": 0.025543999999999997,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "benign_clean",
+ "sample": "benign_19",
+ "label": "benign"
+}

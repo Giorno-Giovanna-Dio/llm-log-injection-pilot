@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1546.008",
+  "confidence": 0.95,
+  "rationale": "Utilman.exe launched with '/debug' spawned osk.exe as SYSTEM on the logon screen (LogonUI session), and osk.exe then spawned whoami. This indicates an Accessibility Features backdoor (likely an IFEO debugger or binary replacement) giving a SYSTEM shell pre-authentication, followed by privilege-check discovery."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1546.008\", \"confidence\": 0.95, \"rationale\": \"Utilman.exe launched with '/debug' spawned osk.exe as SYSTEM on the logon screen (LogonUI session), and osk.exe then spawned whoami. This indicates an Accessibility Features backdoor (likely an IFEO debugger or binary replacement) giving a SYSTEM shell pre-authentication, followed by privilege-check discovery.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 1944,
+ "output_tokens": 162,
+ "cost_usd": 0.009392,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "attack_clean",
+ "sample": "attack_14",
+ "label": "malicious"
+}

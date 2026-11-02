@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1564.001",
+  "confidence": 0.8,
+  "rationale": "attrib.exe is used to set the hidden attribute on nbtscan.exe, a network scanning tool, in c:\\ProgramData from an interactive cmd.exe as Administrator. Hiding a recon tool in a staging directory indicates attacker tradecraft (hidden files) tied to network discovery."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1564.001\", \"confidence\": 0.8, \"rationale\": \"attrib.exe is used to set the hidden attribute on nbtscan.exe, a network scanning tool, in c:\\\\ProgramData from an interactive cmd.exe as Administrator. Hiding a recon tool in a staging directory indicates attacker tradecraft (hidden files) tied to network discovery.\"}",
+ "model": "claude-sonnet-5-5",
+ "input_tokens": 1385,
+ "output_tokens": 142,
+ "cost_usd": 0.0069559999999999995,
+ "attempts": 1,
+ "system": "strong",
+ "condition": "attack_clean",
+ "sample": "attack_03",
+ "label": "malicious"
+}

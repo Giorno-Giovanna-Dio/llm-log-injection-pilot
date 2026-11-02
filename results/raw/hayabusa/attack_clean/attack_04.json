@@ -1,0 +1,30 @@
+{
+ "flagged": true,
+ "alerts": [
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "Proc Exec",
+   "level": "info"
+  },
+  {
+   "rule": "New Port Forwarding Rule Added Via Netsh.EXE",
+   "level": "med"
+  },
+  {
+   "rule": "RDP Port Forwarding Rule Added Via Netsh.EXE",
+   "level": "high"
+  },
+  {
+   "rule": "New PortProxy Registry Entry Added",
+   "level": "med"
+  }
+ ],
+ "cost_usd": 0.0,
+ "system": "hayabusa",
+ "condition": "attack_clean",
+ "sample": "attack_04",
+ "label": "malicious"
+}

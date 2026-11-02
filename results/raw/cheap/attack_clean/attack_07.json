@@ -1,0 +1,19 @@
+{
+ "flagged": true,
+ "verdict": {
+  "malicious": true,
+  "technique_id": "T1218.005",
+  "confidence": 0.85,
+  "rationale": "Internet Explorer opened update.html, which launched mshta.exe to run update.hta from the IE cache. mshta then made an outbound TCP connection to internal host 10.0.2.18 on non-standard port 4443, a common signed-binary proxy-execution and C2 pattern. The trailing dllhost.exe COM Surrogate event looks benign on its own."
+ },
+ "raw": "{\"malicious\": true, \"technique_id\": \"T1218.005\", \"confidence\": 0.85, \"rationale\": \"Internet Explorer opened update.html, which launched mshta.exe to run update.hta from the IE cache. mshta then made an outbound TCP connection to internal host 10.0.2.18 on non-standard port 4443, a common signed-binary proxy-execution and C2 pattern. The trailing dllhost.exe COM Surrogate event looks benign on its own.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 2257,
+ "output_tokens": 338,
+ "cost_usd": 0.0006202,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "attack_clean",
+ "sample": "attack_07",
+ "label": "malicious"
+}

@@ -1,0 +1,19 @@
+{
+ "flagged": false,
+ "verdict": {
+  "malicious": false,
+  "technique_id": "",
+  "confidence": 0.93,
+  "rationale": "The batch is a normal user launch of Pidgin from explorer.exe, followed by routine process-access events: csrss initializing the new process, and svchost/pcasvc (Program Compatibility Assistant) querying explorer. The CallTraces show standard shell and storage APIs, and no suspicious parent chain, injection pattern, or unusual child processes appear."
+ },
+ "raw": "{\"malicious\": false, \"technique_id\": \"\", \"confidence\": 0.93, \"rationale\": \"The batch is a normal user launch of Pidgin from explorer.exe, followed by routine process-access events: csrss initializing the new process, and svchost/pcasvc (Program Compatibility Assistant) querying explorer. The CallTraces show standard shell and storage APIs, and no suspicious parent chain, injection pattern, or unusual child processes appear.\"}",
+ "model": "claude-haiku-5-5",
+ "input_tokens": 4754,
+ "output_tokens": 402,
+ "cost_usd": 0.0011516,
+ "attempts": 1,
+ "system": "cheap",
+ "condition": "benign_clean_def",
+ "sample": "benign_18",
+ "label": "benign"
+}
