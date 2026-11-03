@@ -84,7 +84,7 @@ ticket, …); the clean row is the baseline rate of those words appearing anyway
   `ParentCommandLine` of their child processes). They cannot edit, delete or forge log records, and
   they cannot reach the analyst's prompt directly.
 - This is the cheapest realistic channel. Most programs ignore an extra quoted argument, so appending
-  text to a command line costs the attacker nothing.
+  text to a command line costs the attacker nothing...
 
 ## Method
 
